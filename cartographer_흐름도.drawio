@@ -1,0 +1,261 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.9" pages="2">
+  <diagram id="oaZoq1SFU54uRoa_Ufhz" name="node_main">
+    <mxGraphModel dx="1215" dy="657" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kNiWRtQOzRJOvlnS7mhX-1" target="kNiWRtQOzRJOvlnS7mhX-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-1" value="&lt;b&gt;cartographer_ros/&lt;br&gt;node_main/&lt;br&gt;Run()&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="30" y="90" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kNiWRtQOzRJOvlnS7mhX-4" target="kNiWRtQOzRJOvlnS7mhX-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="130" />
+              <mxPoint x="470" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kNiWRtQOzRJOvlnS7mhX-4" target="kNiWRtQOzRJOvlnS7mhX-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="130" />
+              <mxPoint x="450" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-4" value="&lt;b&gt;cartographer_ros/&lt;br&gt;node/&lt;br&gt;StartTrajectoryWithDefaultTopics()&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="90" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kNiWRtQOzRJOvlnS7mhX-6" target="kNiWRtQOzRJOvlnS7mhX-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-6" value="&lt;b&gt;cartographer_ros/&lt;br&gt;node/&lt;br&gt;AddTrajectory()&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="100" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.018;exitY=0.384;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="kNiWRtQOzRJOvlnS7mhX-57" target="kNiWRtQOzRJOvlnS7mhX-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="kNiWRtQOzRJOvlnS7mhX-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="240" as="sourcePoint" />
+            <mxPoint x="1000" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="950" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="280" as="sourcePoint" />
+            <mxPoint x="1000" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="950" y="240" />
+              <mxPoint x="950" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-8" value="&lt;b&gt;cartographer_ros/&lt;/b&gt;&lt;div&gt;&lt;b&gt;node/&lt;br&gt;ComputeExpectedSensorIds()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="100" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-12" value="&lt;b&gt;cartographer_ros/&lt;br&gt;node/&lt;br&gt;ValidateTrajectoryOptions()&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="220" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-14" value="&lt;b&gt;cartographer/&lt;br&gt;mapping/&lt;br&gt;map_builder_interface.h/&lt;/b&gt;&lt;div&gt;&lt;b&gt;AddTrajectoryBuilder()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-19" value="&lt;b&gt;cartographer_ros/&lt;br&gt;map_builder_bridge/&lt;/b&gt;&lt;div&gt;&lt;b&gt;OnLocalSlamResult()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="300" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-23" value="&lt;b&gt;cartographer/&lt;br&gt;mapping/&lt;br&gt;map_builder_interface.h/&lt;/b&gt;&lt;div&gt;&lt;b&gt;GetTrajectoryBuilder()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="400" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-25" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="kNiWRtQOzRJOvlnS7mhX-26" target="kNiWRtQOzRJOvlnS7mhX-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-26" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-30" value="코드 확인 가능" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="kNiWRtQOzRJOvlnS7mhX-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="40" as="sourcePoint" />
+            <mxPoint x="135" y="35" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-34" value="코드 확인 불가능" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="30" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="kNiWRtQOzRJOvlnS7mhX-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="250" as="sourcePoint" />
+            <mxPoint x="720" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-36" value="&lt;b&gt;cartographer_ros/&lt;/b&gt;&lt;div&gt;&lt;b&gt;node/&lt;br&gt;AddExtrapolator()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="320" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="kNiWRtQOzRJOvlnS7mhX-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="360" as="sourcePoint" />
+            <mxPoint x="720" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-40" value="&lt;b&gt;cartographer_ros/&lt;/b&gt;&lt;div&gt;&lt;b&gt;node/&lt;br&gt;AddSensorSamplers()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="420" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="kNiWRtQOzRJOvlnS7mhX-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="460" as="sourcePoint" />
+            <mxPoint x="720" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="557" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-42" value="&lt;b&gt;cartographer_ros/&lt;/b&gt;&lt;div&gt;&lt;b&gt;node/&lt;br&gt;LaunchSubscribers()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="517" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="550" as="sourcePoint" />
+            <mxPoint x="750" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700.06" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="kNiWRtQOzRJOvlnS7mhX-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="140" as="sourcePoint" />
+            <mxPoint x="720" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-57" value="&lt;b&gt;cartographer_ros/&lt;/b&gt;&lt;div&gt;&lt;b&gt;map_builder_bridge/&lt;br&gt;AddTrajectory()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="210" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="kNiWRtQOzRJOvlnS7mhX-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="550" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="890" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-61" value="&lt;b&gt;cartographer_ros/&lt;/b&gt;&lt;div&gt;&lt;b&gt;node_constants/&lt;br&gt;ComputeRepeatedRopicNames()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="517" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-62" value="&lt;b&gt;cartographer_ros/&lt;/b&gt;&lt;div&gt;&lt;b&gt;node_constants/&lt;br&gt;HandleLaserScanMessage()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="590" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kNiWRtQOzRJOvlnS7mhX-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="kNiWRtQOzRJOvlnS7mhX-62">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="550" as="sourcePoint" />
+            <mxPoint x="970" y="630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HCsmsT4zi3GQTl3PAa5f-1" value="&lt;b&gt;cartographer_ros/&lt;/b&gt;&lt;div&gt;&lt;b&gt;node_constants/&lt;br&gt;HandleMultiEchoLaserScanMessage()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="670" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HCsmsT4zi3GQTl3PAa5f-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="HCsmsT4zi3GQTl3PAa5f-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="610" as="sourcePoint" />
+            <mxPoint x="970" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="705" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HCsmsT4zi3GQTl3PAa5f-3" value="&lt;b&gt;cartographer_ros/&lt;/b&gt;&lt;div&gt;&lt;b&gt;node_constants/&lt;br&gt;HandlePointCloud2Message()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="750" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HCsmsT4zi3GQTl3PAa5f-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="HCsmsT4zi3GQTl3PAa5f-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="690" as="sourcePoint" />
+            <mxPoint x="970" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="785" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HCsmsT4zi3GQTl3PAa5f-5" value="&lt;b&gt;cartographer_ros/&lt;br&gt;node&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;/&lt;/b&gt;&lt;div&gt;&lt;b&gt;MaybeWarnAboutRopicMismatch()&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="400" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HCsmsT4zi3GQTl3PAa5f-7" value="&lt;b&gt;1&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="750" y="650" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HCsmsT4zi3GQTl3PAa5f-8" value="&lt;b&gt;1&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="30" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HCsmsT4zi3GQTl3PAa5f-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="HCsmsT4zi3GQTl3PAa5f-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="439.40999999999997" as="sourcePoint" />
+            <mxPoint x="140" y="440" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="yJ2G9Jc1xy5WJLoe6fTn" name="occupancy_grid_node_main">
+    <mxGraphModel dx="1215" dy="-170" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S9mUuNp8z4JALd4qgnIs-1" value="&lt;b&gt;cartographer_ros/&lt;br&gt;occupancy_grid_node_main/&lt;br&gt;Node::Node()&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="20" y="930" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="S9mUuNp8z4JALd4qgnIs-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="20" y="870" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="S9mUuNp8z4JALd4qgnIs-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="S9mUuNp8z4JALd4qgnIs-4" target="S9mUuNp8z4JALd4qgnIs-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="845" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S9mUuNp8z4JALd4qgnIs-4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="20" y="840" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="S9mUuNp8z4JALd4qgnIs-5" value="코드 확인 가능" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="840" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="S9mUuNp8z4JALd4qgnIs-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="S9mUuNp8z4JALd4qgnIs-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="880" as="sourcePoint" />
+            <mxPoint x="115" y="875" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S9mUuNp8z4JALd4qgnIs-7" value="코드 확인 불가능" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="870" width="90" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
