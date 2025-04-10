@@ -220,14 +220,14 @@ void Node::PublishSubmapList() {
 
 void Node::AddExtrapolator(const int trajectory_id,
                            const TrajectoryOptions& options) {
-  constexpr double kExtrapolationEstimationTimeSec = 0.001;  // 1 ms
+  constexpr double kExtrapolationEstimationTimeSec = 0.001;  // 1 ms //LM pose 보간을 얼마나 자주 업데이트 할지 결정하는 파라미터
   CHECK(extrapolators_.count(trajectory_id) == 0); //LM extrapolators_의 trajectory_id 개수가 0이 아니면 종료
   const double gravity_time_constant =
       node_options_.map_builder_options.use_trajectory_builder_3d()
           ? options.trajectory_builder_options.trajectory_builder_3d_options()
                 .imu_gravity_time_constant()
           : options.trajectory_builder_options.trajectory_builder_2d_options()
-                .imu_gravity_time_constant();
+                .imu_gravity_time_constant();//LM .lua파일에 use_trajectory_builder_3d가 참이면 3d builder에 대한 imu_gravity값을 가져옴
   extrapolators_.emplace(
       std::piecewise_construct, std::forward_as_tuple(trajectory_id),
       std::forward_as_tuple(
@@ -378,7 +378,7 @@ void Node::PublishConstraintList() {
 
 std::set<cartographer::mapping::TrajectoryBuilderInterface::SensorId>
 Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
-  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId;
+  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId; //LM int와 string 
   using SensorType = SensorId::SensorType;
   std::set<SensorId> expected_topics;
   // Subscribe to all laser scan, multi echo laser scan, and point cloud topics.
@@ -393,7 +393,7 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
   for (const std::string& topic :
        ComputeRepeatedTopicNames(kPointCloud2Topic, options.num_point_clouds)) {
     expected_topics.insert(SensorId{SensorType::RANGE, topic});
-  }
+  }//LM 아마 전부 LiDAR관련 값이기 때문에 SensorType을 같게 한것 같다. (추측)
   // For 2D SLAM, subscribe to the IMU if we expect it. For 3D SLAM, the IMU is
   // required.
   if (node_options_.map_builder_options.use_trajectory_builder_3d() ||
@@ -423,8 +423,8 @@ int Node::AddTrajectory(const TrajectoryOptions& options) {
       expected_sensor_ids = ComputeExpectedSensorIds(options); // LM 사용할 메세지 값 저장. (ex. scan,IMU,odom,landmark 등등)
   const int trajectory_id =
       map_builder_bridge_->AddTrajectory(expected_sensor_ids, options);
-  AddExtrapolator(trajectory_id, options);
-  AddSensorSamplers(trajectory_id, options);
+  AddExtrapolator(trajectory_id, options); //LM extrapolators_에 값을 저장함
+  AddSensorSamplers(trajectory_id, options); //LM sensor_samples_에 값을 저장함.
   LaunchSubscribers(options, trajectory_id); //LM 해당 코드가 scan data와 다양한 data들을 sub하는 코드임.
   maybe_warn_about_topic_mismatch_timer_ = node_->create_wall_timer(
     std::chrono::milliseconds(int(kTopicMismatchCheckDelaySec * 1000)),
@@ -846,7 +846,7 @@ void Node::HandleLaserScanMessage(const int trajectory_id,
   }
   map_builder_bridge_->sensor_bridge(trajectory_id)
       ->HandleLaserScanMessage(sensor_id, msg);
-} // if 문의 뜻을 모르겠음 LM
+} // LM
 
 void Node::HandleMultiEchoLaserScanMessage(
     const int trajectory_id, const std::string& sensor_id,
