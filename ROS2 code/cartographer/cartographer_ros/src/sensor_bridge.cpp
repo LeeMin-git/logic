@@ -59,7 +59,7 @@ std::unique_ptr<carto::sensor::OdometryData> SensorBridge::ToOdometryData(
   return absl::make_unique<carto::sensor::OdometryData>(
       carto::sensor::OdometryData{
           time, ToRigid3d(msg->pose.pose) * sensor_to_tracking->inverse()});
-}
+} //LM sensor frame을 기준으로 한 좌표를 tracking_frame 가준의 좌표로 변환
 
 void SensorBridge::HandleOdometryMessage(
     const std::string& sensor_id, const nav_msgs::msg::Odometry::ConstSharedPtr& msg) {
@@ -69,7 +69,7 @@ void SensorBridge::HandleOdometryMessage(
     trajectory_builder_->AddSensorData(
         sensor_id,
         carto::sensor::OdometryData{odometry_data->time, odometry_data->pose});
-  }
+  }//LM sensor frame을 기준으로 한 시간과 좌표를 tracking_frame 가준의 시간과 좌표로 변환
 }
 
 void SensorBridge::HandleNavSatFixMessage(
@@ -187,16 +187,18 @@ void SensorBridge::HandleLaserScan(
     const carto::sensor::PointCloudWithIntensities& points) {
   if (points.points.empty()) {
     return;
-  }
-  CHECK_LE(points.points.back().time, 0.f);
+  }//LM 비어있는 포인트클라우드를 무시하기 위해
+  CHECK_LE(points.points.back().time, 0.f); //LM 마지막 포인트의 상대 시간을 통해 과거의 데이터인지를 확인
   // TODO(gaschler): Use per-point time instead of subdivisions.
   for (int i = 0; i != num_subdivisions_per_laser_scan_; ++i) {
+    //LM 너무 많은 포인터가 한번에 들어올 수 있기 때문에 SLAM의 성능을 생각하여 나눠서 처리함.
     const size_t start_index =
         points.points.size() * i / num_subdivisions_per_laser_scan_;
     const size_t end_index =
         points.points.size() * (i + 1) / num_subdivisions_per_laser_scan_;
     carto::sensor::TimedPointCloud subdivision(
         points.points.begin() + start_index, points.points.begin() + end_index);
+        //LM subdivision의 마지막 포인트시간은 0에 가까움 -> 이해안됨.
     if (start_index == end_index) {
       continue;
     }
@@ -205,19 +207,21 @@ void SensorBridge::HandleLaserScan(
     // send all other sensor data first.
     const carto::common::Time subdivision_time =
         time + carto::common::FromSeconds(time_to_subdivision_end);
+        //LM subdivision의 마지막 포인트 시간을 기준으로 subdivision의 실제 시간으로 보정 -> 이해안됨.
     auto it = sensor_to_previous_subdivision_time_.find(sensor_id);
     if (it != sensor_to_previous_subdivision_time_.end() &&
         it->second >= subdivision_time) {
+          //LM 이전 subdivision보다 더 예전 시간의 데이터라면 무시
       LOG(WARNING) << "Ignored subdivision of a LaserScan message from sensor "
                    << sensor_id << " because previous subdivision time "
                    << it->second << " is not before current subdivision time "
                    << subdivision_time;
       continue;
-    }
+    } 
     sensor_to_previous_subdivision_time_[sensor_id] = subdivision_time;
     for (auto& point : subdivision) {
       point.time -= time_to_subdivision_end;
-    }
+    } // 모든 포인트의 시간에서 마지막 포인트 시간을 빼서 정규화 -> 이해 안됨.
     CHECK_EQ(subdivision.back().time, 0.f);
     HandleRangefinder(sensor_id, subdivision_time, frame_id, subdivision);
   }
@@ -228,13 +232,14 @@ void SensorBridge::HandleRangefinder(
     const std::string& frame_id, const carto::sensor::TimedPointCloud& ranges) {
   if (!ranges.empty()) {
     CHECK_LE(ranges.back().time, 0.f);
-  }
+  } //LM 마지막 포인트의 time은 항상 time<=0 because, 마지막 포인트를 기준으로 포인트들의 상대 시간을 저장함.
 
   // This was added to get rid of the TimedPointCloudData warning for a missing argument
   std::vector<float> intensities_;
 
   const auto sensor_to_tracking =
       tf_bridge_.LookupToTracking(time, CheckNoLeadingSlash(frame_id));
+      //LM tf_bridge_는 ROS의 TF 정보를 가져오는 역할
   if (sensor_to_tracking != nullptr) {
     trajectory_builder_->AddSensorData(
         sensor_id, carto::sensor::TimedPointCloudData{

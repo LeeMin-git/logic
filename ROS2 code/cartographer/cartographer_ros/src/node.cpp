@@ -842,11 +842,11 @@ void Node::HandleLaserScanMessage(const int trajectory_id,
                                   const sensor_msgs::msg::LaserScan::ConstSharedPtr& msg) {
   absl::MutexLock lock(&mutex_);
   if (!sensor_samplers_.at(trajectory_id).rangefinder_sampler.Pulse()) {
-    return;
+    return; //LM .lua 파일의 rangefinder_smalpling_ratio 값을 기반으로 true반환 (ex ratio = 0.5 => 50퍼 확률로 true)
   }
   map_builder_bridge_->sensor_bridge(trajectory_id)
       ->HandleLaserScanMessage(sensor_id, msg);
-} // LM
+}
 
 void Node::HandleMultiEchoLaserScanMessage(
     const int trajectory_id, const std::string& sensor_id,

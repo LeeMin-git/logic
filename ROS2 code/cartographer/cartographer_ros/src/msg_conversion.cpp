@@ -130,6 +130,8 @@ float GetFirstEcho(const sensor_msgs::msg::LaserEcho& echo) {
 
 // For sensor_msgs::msg::LaserScan and sensor_msgs::msg::MultiEchoLaserScan.
 template <typename LaserMessageType>
+
+//LM 아래의 함수는 /scan 값을 sub하여 실행하는 함수임.
 std::tuple<PointCloudWithIntensities, ::cartographer::common::Time>
 LaserScanToPointCloudWithIntensities(const LaserMessageType& msg) {
   CHECK_GE(msg.range_min, 0.f);
@@ -139,6 +141,7 @@ LaserScanToPointCloudWithIntensities(const LaserMessageType& msg) {
   } else {
     CHECK_GT(msg.angle_min, msg.angle_max);
   }
+  //LM 여러 설정을 비교하는 것으로 보임.
   PointCloudWithIntensities point_cloud;
   float angle = msg.angle_min;
   for (size_t i = 0; i < msg.ranges.size(); ++i) {

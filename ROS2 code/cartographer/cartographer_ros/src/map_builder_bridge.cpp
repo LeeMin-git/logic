@@ -528,7 +528,7 @@ visualization_msgs::msg::MarkerArray MapBuilderBridge::GetConstraintList(rclcpp:
 
 SensorBridge* MapBuilderBridge::sensor_bridge(const int trajectory_id) {
   return sensor_bridges_.at(trajectory_id).get();
-}
+}//LM trajectory_id의 key 값으로 하는 value를 가져옴
 
 void MapBuilderBridge::OnLocalSlamResult(
     const int trajectory_id, const ::cartographer::common::Time time,
