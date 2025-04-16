@@ -74,7 +74,7 @@ void Run() {
     //LM 핵심역할, map_builder를 생성함.
   auto node = std::make_shared<cartographer_ros::Node>(
     node_options, std::move(map_builder), tf_buffer, cartographer_node,
-    FLAGS_collect_metrics); // LM 핵심역할, 인터페이스 생성
+    FLAGS_collect_metrics); // LM 핵심역할, 인터페이스 생성, 여기서 자동으로 publisher, service_server가 선언됨, map_builder의 소유권 node에 이전
   if (!FLAGS_load_state_filename.empty()) {
     node->LoadState(FLAGS_load_state_filename, FLAGS_load_frozen_state);
   } //LM load_state_filename에 해당 하는 argv 값을 전달하지 않기때문에 해당 코드 타지 않음.

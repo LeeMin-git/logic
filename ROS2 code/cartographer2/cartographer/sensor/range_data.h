@@ -30,9 +30,9 @@ namespace sensor {
 // was detected, and were inserted at a configured distance. It is assumed that
 // between the 'origin' and 'misses' is free space.
 struct RangeData {
-  Eigen::Vector3f origin;
-  PointCloud returns;
-  PointCloud misses;
+  Eigen::Vector3f origin; //LM 센서가 위치를 측정하기 시작한 좌표
+  PointCloud returns; //LM 레이저가 장애물에 반사됭 돌아온 점들
+  PointCloud misses; //LM 돌아 오지 않는 점들
 };
 
 RangeData TransformRangeData(const RangeData& range_data,

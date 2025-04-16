@@ -62,7 +62,7 @@ class MapBuilderBridge {
     cartographer::transform::Rigid3d local_to_map;
     std::unique_ptr<cartographer::transform::Rigid3d> published_to_tracking;
     TrajectoryOptions trajectory_options;
-  };
+  };//LM
 
   MapBuilderBridge(
       const NodeOptions& node_options,

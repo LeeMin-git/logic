@@ -133,7 +133,8 @@ int MapBuilderBridge::AddTrajectory(
                      InsertionResult>) {
         OnLocalSlamResult(trajectory_id, time, local_pose, range_data_in_local);
       }); //LM AddTrajectoryBuilder는 소스 코드를 확인할 수 없음.
-      //LM 일단 이해가 안감 보류
+      //LM 콜백함수(람다)를 실행하고 trajectory_id 값을 return 받는다.
+      //LM 결국 인자로 받아오는 값들을 사용하여 local_slam_data_에 추가함.
   LOG(INFO) << "Added trajectory with ID '" << trajectory_id << "'.";
 
   // Make sure there is no trajectory with 'trajectory_id' yet.
@@ -230,7 +231,7 @@ cartographer_ros_msgs::msg::SubmapList MapBuilderBridge::GetSubmapList(rclcpp::T
     submap_list.submap.push_back(submap_entry);
   }
   return submap_list;
-}
+}//LM node_options와 map_builder_에서 여러 정보를 가져와 알려주는 함수
 
 std::unordered_map<int, MapBuilderBridge::LocalTrajectoryData>
 MapBuilderBridge::GetLocalTrajectoryData() {
@@ -532,6 +533,7 @@ SensorBridge* MapBuilderBridge::sensor_bridge(const int trajectory_id) {
 
 void MapBuilderBridge::OnLocalSlamResult(
     const int trajectory_id, const ::cartographer::common::Time time,
+
     const Rigid3d local_pose,
     ::cartographer::sensor::RangeData range_data_in_local) {
   std::shared_ptr<const LocalTrajectoryData::LocalSlamData> local_slam_data =

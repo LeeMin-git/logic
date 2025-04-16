@@ -155,12 +155,12 @@ Node::Node(
       kReadMetricsServiceName,
       std::bind(
           &Node::handleReadMetrics, this, std::placeholders::_1, std::placeholders::_2));
-
+//LM request가 있을 때 마다 &Node::handle~ 함수를 실행함.
 
   submap_list_timer_ = node_->create_wall_timer(
     std::chrono::milliseconds(int(node_options_.submap_publish_period_sec * 1000)),
     [this]() {
-      PublishSubmapList();
+      PublishSubmapList(); //LM 특정 주기마다 'sub_map_list'라는 msg로 data를 pub함.
     });
   if (node_options_.pose_publish_period_sec > 0) {
     local_trajectory_data_timer_ = node_->create_wall_timer(
@@ -420,7 +420,7 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
 
 int Node::AddTrajectory(const TrajectoryOptions& options) {
   const std::set<cartographer::mapping::TrajectoryBuilderInterface::SensorId>
-      expected_sensor_ids = ComputeExpectedSensorIds(options); // LM 사용할 메세지 값 저장. (ex. scan,IMU,odom,landmark 등등)
+      expected_sensor_ids = ComputeExpectedSensorIds(options); //LM 사용할 메세지 값 저장. (ex. scan,IMU,odom,landmark 등등)
   const int trajectory_id =
       map_builder_bridge_->AddTrajectory(expected_sensor_ids, options);
   AddExtrapolator(trajectory_id, options); //LM extrapolators_에 값을 저장함
@@ -550,7 +550,7 @@ cartographer_ros_msgs::msg::StatusResponse Node::FinishTrajectoryUnderLock(
     status_response.code = cartographer_ros_msgs::msg::StatusCode::OK;
     LOG(INFO) << status_response.message;
     return status_response;
-  }
+  } //LM response 값으로 message와 code를 보냄.
 
   // First, check if we can actually finish the trajectory.
   status_response = TrajectoryStateToStatus(
@@ -637,8 +637,8 @@ bool Node::handleStartTrajectory(
 
 void Node::StartTrajectoryWithDefaultTopics(const TrajectoryOptions& options) {
   absl::MutexLock lock(&mutex_);
-  CHECK(ValidateTrajectoryOptions(options)); // LM ValidateTrajectoryOptions(options)의 return 값이 false이면 코드 종료 
-  AddTrajectory(options); // LM 여기에 topic을 sub 하는 코드가 있음 
+  CHECK(ValidateTrajectoryOptions(options)); //LM ValidateTrajectoryOptions(options)의 return 값이 false이면 코드 종료 
+  AddTrajectory(options); //LM 여기에 topic을 sub 하는 코드가 있음 
 }
 
 std::vector<

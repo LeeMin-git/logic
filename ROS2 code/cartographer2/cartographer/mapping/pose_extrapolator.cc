@@ -129,7 +129,7 @@ void PoseExtrapolator::AddOdometryData(
   linear_velocity_from_odometry_ =
       orientation_at_newest_odometry_time *
       linear_velocity_in_tracking_frame_at_newest_odometry_time;
-}
+} //LM 해당 부분의 수식이 이해가 안됨.
 
 transform::Rigid3d PoseExtrapolator::ExtrapolatePose(const common::Time time) {
   const TimedPose& newest_timed_pose = timed_pose_queue_.back();
@@ -191,7 +191,7 @@ void PoseExtrapolator::TrimOdometryData() {
          odometry_data_[1].time <= timed_pose_queue_.back().time) {
     odometry_data_.pop_front();
   }
-}
+}//LM 오래된 데이터를 지우는 함수
 
 void PoseExtrapolator::AdvanceImuTracker(const common::Time time,
                                          ImuTracker* const imu_tracker) const {
@@ -222,7 +222,7 @@ void PoseExtrapolator::AdvanceImuTracker(const common::Time time,
     ++it;
   }
   imu_tracker->Advance(time);
-}
+}//LM 
 
 Eigen::Quaterniond PoseExtrapolator::ExtrapolateRotation(
     const common::Time time, ImuTracker* const imu_tracker) const {
