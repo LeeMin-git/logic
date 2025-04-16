@@ -93,7 +93,7 @@ void PoseExtrapolator::AddImuData(const sensor::ImuData& imu_data) {
         imu_data.time >= timed_pose_queue_.back().time);
   imu_data_.push_back(imu_data);
   TrimImuData();
-}
+}//LM 비어있지 않고 마지막 시간 보다 나중의 값이면 추가
 
 void PoseExtrapolator::AddOdometryData(
     const sensor::OdometryData& odometry_data) {
@@ -184,14 +184,14 @@ void PoseExtrapolator::TrimImuData() {
          imu_data_[1].time <= timed_pose_queue_.back().time) {
     imu_data_.pop_front();
   }
-}
+}//LM 오래된 imu 데이터 제거
 
 void PoseExtrapolator::TrimOdometryData() {
   while (odometry_data_.size() > 2 && !timed_pose_queue_.empty() &&
          odometry_data_[1].time <= timed_pose_queue_.back().time) {
     odometry_data_.pop_front();
   }
-}//LM 오래된 데이터를 지우는 함수
+}//LM 오래된 odom 데이터 제거
 
 void PoseExtrapolator::AdvanceImuTracker(const common::Time time,
                                          ImuTracker* const imu_tracker) const {
