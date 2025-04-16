@@ -533,7 +533,6 @@ SensorBridge* MapBuilderBridge::sensor_bridge(const int trajectory_id) {
 
 void MapBuilderBridge::OnLocalSlamResult(
     const int trajectory_id, const ::cartographer::common::Time time,
-
     const Rigid3d local_pose,
     ::cartographer::sensor::RangeData range_data_in_local) {
   std::shared_ptr<const LocalTrajectoryData::LocalSlamData> local_slam_data =
@@ -542,6 +541,7 @@ void MapBuilderBridge::OnLocalSlamResult(
                                              std::move(range_data_in_local)});
   absl::MutexLock lock(&mutex_);
   local_slam_data_[trajectory_id] = std::move(local_slam_data);
+  //LM local_slam_data에는 시간, 현재 위치, 센서의 값(거리값)이 저장된다.
 }
 
 }  // namespace cartographer_ros

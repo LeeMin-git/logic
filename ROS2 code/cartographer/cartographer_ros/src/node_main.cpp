@@ -71,7 +71,7 @@ void Run() {
 
   auto map_builder =
     cartographer::mapping::CreateMapBuilder(node_options.map_builder_options);
-    //LM 핵심역할, map_builder를 생성함.
+    //LM 핵심역할,map_Builder.h의 createbuilder 사용. map_builder를 생성함.
   auto node = std::make_shared<cartographer_ros::Node>(
     node_options, std::move(map_builder), tf_buffer, cartographer_node,
     FLAGS_collect_metrics); // LM 핵심역할, 인터페이스 생성, 여기서 자동으로 publisher, service_server가 선언됨, map_builder의 소유권 node에 이전
