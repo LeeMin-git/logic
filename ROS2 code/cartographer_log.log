@@ -1,0 +1,990 @@
+[INFO] [launch]: All log files can be found below /home/cowin/.ros/log/2025-04-17-17-01-10-089868-cowin-86634
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [cartographer_node-1]: process started with pid [86636]
+[INFO] [cartographer_occupancy_grid_node-2]: process started with pid [86638]
+[INFO] [rviz2-3]: process started with pid [86640]
+[cartographer_node-1] [INFO] [1744876870.191464868] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua' for 'turtlebot3_lds_2d.lua'.
+[cartographer_node-1] [INFO] [1744876870.191814246] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[cartographer_node-1] [INFO] [1744876870.191838875] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[cartographer_node-1] [INFO] [1744876870.191875293] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[cartographer_node-1] [INFO] [1744876870.191895144] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[cartographer_node-1] [INFO] [1744876870.192028644] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[cartographer_node-1] [INFO] [1744876870.192044233] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[cartographer_node-1] [INFO] [1744876870.192078187] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[cartographer_node-1] [INFO] [1744876870.192092801] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[cartographer_node-1] [INFO] [1744876870.192226161] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[cartographer_node-1] [INFO] [1744876870.192237888] [cartographer logger]: I0417 17:01:10.000000 86636 configuration_file_resolver.cc:41] Found '/home/cowin/carto_test_min/install/cartographer/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[cartographer_node-1] [INFO] [1744876870.203296674] [cartographer logger]: I0417 17:01:10.000000 86636 map_builder_bridge.cpp:138] Added trajectory with ID '0'.
+[cartographer_node-1] [INFO] [1744876870.353873351] [cartographer logger]: I0417 17:01:10.000000 86636 ordered_multi_queue.cc:172] All sensor data for trajectory 0 is available starting at '621355968042690000'.
+[cartographer_node-1] [INFO] [1744876870.362444490] [cartographer logger]: I0417 17:01:10.000000 86636 local_trajectory_builder_2d.cc:312] Extrapolator not yet initialized.
+[cartographer_node-1] [WARN] [1744876870.362933611] [cartographer logger]: W0417 17:01:10.000000 86636 pose_extrapolator.cc:168] Queue too short for velocity estimation. Queue duration: 0 s
+[cartographer_node-1] [INFO] [1744876870.363511017] [cartographer logger]: I0417 17:01:10.000000 86636 pose_graph_2d.cc:148] Inserted submap (0, 0).
+[rviz2-3] [INFO] [1744876870.530060763] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1744876870.530239141] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-3] [INFO] [1744876870.554732294] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1744876872.193016574] [rviz2]: Trying to create a map of size 91 x 113 using 1 swatches
+[rviz2-3] [ERROR] [1744876872.224639583] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-3] active samplers with a different type refer to the same texture image unit
+[rviz2-3] [INFO] [1744876873.374598001] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 5.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876873.598391159] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 5.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876873.791112980] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 5.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876873.982408698] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 5.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876874.206084818] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 6.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876874.207416282] [rviz2]: Trying to create a map of size 91 x 114 using 1 swatches
+[rviz2-3] [INFO] [1744876874.398820748] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 6.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876874.590654700] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 6.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876874.782757091] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 6.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876875.006230485] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 6.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876875.198884566] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 7.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876875.390221087] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 7.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876875.614888262] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 7.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876875.806909508] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 7.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876875.998226503] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 7.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876876.222497493] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 8.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876876.415085470] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 8.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876876.606606705] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 8.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876876.798973968] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 8.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876877.022026381] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 8.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876877.214348818] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 9.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876877.406722906] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 9.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876877.630484637] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 9.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876877.822132057] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 9.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876878.014937199] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 9.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876878.238878540] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 10.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876878.430935902] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 10.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876878.622303781] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 10.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876878.814989795] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 10.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876879.038909765] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 10.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876879.230885333] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 11.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876879.422373215] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 11.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876879.646544695] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 11.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876879.838344139] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 11.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876880.029978605] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 11.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876880.222776710] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 12.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876880.446206530] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 12.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876880.638238243] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 12.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876880.830403152] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 12.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876881.054254015] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 12.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876881.246938744] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 13.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876881.438467816] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 13.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876881.630255714] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 13.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876881.854378051] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 13.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876882.046543495] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 13.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876882.238049014] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 14.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876882.430657739] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 14.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876882.654613317] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 14.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876882.846200976] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 14.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876883.038168465] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 14.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876883.262506886] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 15.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876883.454127528] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 15.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876883.646876607] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 15.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876883.838554751] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 15.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876884.062970286] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 15.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876884.254264494] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 16.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876884.446884148] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 16.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876884.638538597] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 16.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876884.863003422] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 16.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876885.054375547] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 16.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876885.244467251] [cartographer logger]: I0417 17:01:25.000000 86636 collated_trajectory_builder.cc:81] odom rate: 29.41 Hz 3.40e-02 s +/- 2.43e-16 s (pulsed at 98.47% real time)
+[cartographer_node-1] [INFO] [1744876885.244515489] [cartographer logger]: I0417 17:01:25.000000 86636 collated_trajectory_builder.cc:81] scan rate: 5.00 Hz 2.00e-01 s +/- 6.97e-04 s (pulsed at 99.27% real time)
+[rviz2-3] [INFO] [1744876885.246911014] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 17.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876885.470656151] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 17.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876885.663028437] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 17.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876885.854540324] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 17.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876886.078548950] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 17.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876886.270428922] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 18.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876886.462122883] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 18.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876886.654856487] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 18.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876886.878669215] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 18.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876887.070269766] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 18.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876887.200656494] [rviz2]: Trying to create a map of size 92 x 114 using 1 swatches
+[rviz2-3] [INFO] [1744876887.262558517] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 19.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876887.486300359] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 19.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876887.678561426] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 19.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876887.870522005] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 19.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876888.062516794] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 19.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876888.285996605] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 20.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876888.478807277] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 20.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876888.670563974] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 20.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876888.863015514] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 20.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876889.086165857] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 20.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876889.278565794] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 21.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876889.470901132] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 21.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876889.694673303] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 21.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876889.886786897] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 21.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876890.078547130] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 21.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876890.302904048] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 22.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876890.494293170] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 22.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876890.686511486] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 22.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876890.878283680] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 22.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876891.102220793] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 22.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876891.294157021] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 23.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876891.486180693] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 23.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876891.710872665] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 23.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876891.903081378] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 23.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876892.094467418] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 23.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876892.287019764] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 24.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876892.510586498] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 24.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876892.702878841] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 24.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876892.894841545] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 24.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876893.118206237] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 24.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876893.311161335] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 25.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876893.502741593] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 25.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876893.694883738] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 25.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876893.918502017] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 25.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876894.110174450] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 25.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876894.302564037] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 26.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876894.494674910] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 26.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876894.718052906] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 26.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876894.910378668] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 26.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876895.102602268] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 26.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876895.326905290] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 27.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876895.518944558] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 27.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876895.710958321] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 27.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876895.902677814] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 27.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876896.126967187] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 27.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876896.319028273] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 28.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876896.510134569] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 28.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876896.702653611] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 28.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876896.926129697] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 28.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876897.118561501] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 28.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876897.310373344] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 29.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876897.535028884] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 29.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876897.726089905] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 29.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876897.918442531] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 29.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876898.110288123] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 29.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876898.334064565] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 30.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876898.526361064] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 30.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876898.718378725] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 30.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876898.942632570] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 30.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876899.134610211] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 30.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876899.326237059] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 31.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876899.518667059] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 31.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876899.742460154] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 31.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876899.934344424] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 31.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876900.126082636] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 31.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876900.323232918] [cartographer logger]: I0417 17:01:40.000000 86636 collated_trajectory_builder.cc:81] odom rate: 29.41 Hz 3.40e-02 s +/- 2.43e-16 s (pulsed at 99.67% real time)
+[cartographer_node-1] [INFO] [1744876900.323282378] [cartographer logger]: I0417 17:01:40.000000 86636 collated_trajectory_builder.cc:81] scan rate: 5.00 Hz 2.00e-01 s +/- 5.97e-04 s (pulsed at 99.35% real time)
+[rviz2-3] [INFO] [1744876900.351022365] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 32.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876900.542101232] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 32.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876900.734441370] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 32.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876900.926578718] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 32.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876901.150697199] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 32.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876901.342684923] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 33.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876901.534617797] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 33.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876901.758840550] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 33.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876901.950296249] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 33.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876902.142419114] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 33.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876902.333976364] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 34.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876902.558623365] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 34.270 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876902.744172710] [cartographer logger]: I0417 17:01:42.000000 86636 pose_graph_2d.cc:148] Inserted submap (0, 1).
+[cartographer_node-1] [INFO] [1744876902.744396837] [cartographer logger]: I0417 17:01:42.000000 86663 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[cartographer_node-1] [INFO] [1744876902.744448233] [cartographer logger]: I0417 17:01:42.000000 86663 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[cartographer_node-1] [INFO] [1744876902.744461540] [cartographer logger]: I0417 17:01:42.000000 86663 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-1] Count: 0
+[rviz2-3] [INFO] [1744876902.750493956] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 34.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876902.942380870] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 34.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876903.134566193] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 34.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876903.200891757] [rviz2]: Trying to create a map of size 93 x 114 using 1 swatches
+[rviz2-3] [INFO] [1744876903.358904846] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 35.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876903.550963655] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 35.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876903.742062064] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 35.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876903.966802420] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 35.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876904.158384784] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 35.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876904.350736990] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 36.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876904.542358900] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 36.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876904.766811938] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 36.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876904.958911119] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 36.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876905.151000180] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 36.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876905.374985316] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 37.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876905.566854271] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 37.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876905.758266853] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 37.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876905.950149281] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 37.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876906.174720419] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 37.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876906.366832588] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 38.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876906.558472393] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 38.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876906.782931530] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 38.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876906.974909365] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 38.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876907.166600621] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 38.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876907.199586772] [rviz2]: Trying to create a map of size 94 x 115 using 1 swatches
+[rviz2-3] [INFO] [1744876907.358969789] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 39.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876907.582830749] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 39.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876907.774851404] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 39.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876907.966184208] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 39.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876908.158796391] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 39.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876908.382944265] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 40.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876908.574902639] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 40.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876908.766532415] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 40.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876908.990106057] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 40.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876909.182272088] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 40.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876909.374134134] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 41.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876909.566205629] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 41.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876909.790178974] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 41.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876909.982926565] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 41.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876910.174511310] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 41.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876910.398521861] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 42.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876910.590315759] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 42.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876910.782881574] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 42.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876910.974375626] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 42.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876911.198363320] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 42.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876911.390346068] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 43.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876911.582270715] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 43.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876911.774570759] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 43.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876911.998834659] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 43.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876912.190294767] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 43.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876912.382986001] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 44.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876912.574218873] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 44.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876912.798678188] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 44.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876912.990188564] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 44.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876913.182215321] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 44.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876913.406890324] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 45.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876913.598357035] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 45.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876913.790990695] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 45.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876913.982641150] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 45.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876914.206107724] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 45.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876914.398958413] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 46.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876914.590025990] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 46.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876914.814877337] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 46.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876915.006851184] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 46.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876915.198859535] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 46.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876915.390857613] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 47.069 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876915.392017725] [cartographer logger]: I0417 17:01:55.000000 86636 collated_trajectory_builder.cc:81] odom rate: 29.41 Hz 3.40e-02 s +/- 2.43e-16 s (pulsed at 99.50% real time)
+[cartographer_node-1] [INFO] [1744876915.392063410] [cartographer logger]: I0417 17:01:55.000000 86636 collated_trajectory_builder.cc:81] scan rate: 5.00 Hz 2.00e-01 s +/- 7.02e-04 s (pulsed at 99.63% real time)
+[rviz2-3] [INFO] [1744876915.614084710] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 47.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876915.806613117] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 47.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876915.998850477] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 47.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876916.222928777] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 47.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876916.414252564] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 48.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876916.606265713] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 48.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876916.798348796] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 48.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876917.022742457] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 48.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876917.214977030] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 48.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876917.407012555] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 49.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876917.598991246] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 49.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876917.822827965] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 49.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876918.014021077] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 49.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876918.206692953] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 49.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876918.430397481] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 50.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876918.622268322] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 50.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876918.814460004] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 50.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876919.038671096] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 50.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876919.230571273] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 50.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876919.422761231] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 51.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876919.614497390] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 51.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876919.838459489] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 51.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876920.030759430] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 51.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876920.222640958] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 51.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876920.446502675] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 52.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876920.638633400] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 52.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876920.830276957] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 52.470 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876920.850171682] [cartographer logger]: I0417 17:02:00.000000 86636 pose_graph_2d.cc:148] Inserted submap (0, 2).
+[cartographer_node-1] [INFO] [1744876920.853544276] [cartographer logger]: I0417 17:02:00.000000 86665 constraint_builder_2d.cc:275] Node (0, 180) with 200 points on submap (0, 0) differs by translation 0.00 rotation 0.002 with score 88.2%.
+[rviz2-3] [INFO] [1744876921.022700318] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 52.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876921.062019644] [cartographer logger]: I0417 17:02:01.000000 86663 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[cartographer_node-1] [INFO] [1744876921.062120957] [cartographer logger]: I0417 17:02:01.000000 86663 constraint_builder_2d.cc:290] 1 computations resulted in 1 additional constraints.
+[cartographer_node-1] [INFO] [1744876921.062182914] [cartographer logger]: I0417 17:02:01.000000 86663 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-1] Count: 1  Min: 0.882212  Max: 0.882212  Mean: 0.882212
+[rviz2-3] [INFO] [1744876921.246960297] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 52.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876921.438304632] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 53.070 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876921.441230373] [cartographer logger]: I0417 17:02:01.000000 86665 constraint_builder_2d.cc:275] Node (0, 183) with 203 points on submap (0, 0) differs by translation 0.01 rotation 0.005 with score 88.3%.
+[rviz2-3] [INFO] [1744876921.631180350] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 53.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876921.854889651] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 53.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876922.046113974] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 53.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876922.054348274] [cartographer logger]: I0417 17:02:02.000000 86662 constraint_builder_2d.cc:275] Node (0, 186) with 203 points on submap (0, 0) differs by translation 0.01 rotation 0.003 with score 88.1%.
+[rviz2-3] [INFO] [1744876922.239070002] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 53.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876922.430950843] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 54.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876922.654628708] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 54.270 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876922.842244347] [cartographer logger]: I0417 17:02:02.000000 86662 constraint_builder_2d.cc:275] Node (0, 190) with 200 points on submap (0, 0) differs by translation 0.01 rotation 0.004 with score 88.9%.
+[rviz2-3] [INFO] [1744876922.846662079] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 54.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876923.038521357] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 54.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876923.262548354] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 54.869 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876923.452395879] [cartographer logger]: I0417 17:02:03.000000 86664 constraint_builder_2d.cc:275] Node (0, 193) with 211 points on submap (0, 0) differs by translation 0.00 rotation 0.000 with score 88.6%.
+[rviz2-3] [INFO] [1744876923.454771711] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 55.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876923.646299368] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 55.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876923.838902013] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 55.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876924.062913217] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 55.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876924.064352190] [cartographer logger]: I0417 17:02:04.000000 86662 constraint_builder_2d.cc:275] Node (0, 196) with 214 points on submap (0, 0) differs by translation 0.00 rotation 0.000 with score 88.2%.
+[rviz2-3] [INFO] [1744876924.254589205] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 55.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876924.447021165] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 56.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876924.670670665] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 56.269 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876924.858557879] [cartographer logger]: I0417 17:02:04.000000 86662 constraint_builder_2d.cc:275] Node (0, 200) with 211 points on submap (0, 0) differs by translation 0.00 rotation 0.000 with score 88.6%.
+[rviz2-3] [INFO] [1744876924.862667531] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 56.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876925.054924727] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 56.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876925.246639530] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 56.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876925.470964328] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 57.070 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876925.471378280] [cartographer logger]: I0417 17:02:05.000000 86663 constraint_builder_2d.cc:275] Node (0, 203) with 203 points on submap (0, 0) differs by translation 0.00 rotation 0.001 with score 88.2%.
+[rviz2-3] [INFO] [1744876925.662215300] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 57.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876925.854934609] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 57.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876926.079102739] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 57.669 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876926.087498630] [cartographer logger]: I0417 17:02:06.000000 86665 constraint_builder_2d.cc:275] Node (0, 206) with 201 points on submap (0, 0) differs by translation 0.00 rotation 0.004 with score 88.3%.
+[rviz2-3] [INFO] [1744876926.270775707] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 57.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876926.462565313] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 58.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876926.654398553] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 58.270 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876926.868332569] [cartographer logger]: I0417 17:02:06.000000 86664 constraint_builder_2d.cc:275] Node (0, 210) with 208 points on submap (0, 0) differs by translation 0.00 rotation 0.000 with score 88.2%.
+[rviz2-3] [INFO] [1744876926.878217493] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 58.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876927.069989213] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 58.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876927.262214966] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 58.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876927.454516345] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 59.069 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876927.482218163] [cartographer logger]: I0417 17:02:07.000000 86663 constraint_builder_2d.cc:275] Node (0, 213) with 202 points on submap (0, 0) differs by translation 0.00 rotation 0.001 with score 89.5%.
+[rviz2-3] [INFO] [1744876927.678771189] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 59.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876927.870469952] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 59.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876928.062378937] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 59.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876928.063388492] [cartographer logger]: I0417 17:02:08.000000 86665 constraint_builder_2d.cc:275] Node (0, 216) with 201 points on submap (0, 0) differs by translation 0.00 rotation 0.002 with score 89.0%.
+[rviz2-3] [INFO] [1744876928.254406531] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 59.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876928.478193269] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 60.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876928.670619931] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 60.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876928.862293075] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 60.470 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876928.880552058] [cartographer logger]: I0417 17:02:08.000000 86665 constraint_builder_2d.cc:275] Node (0, 220) with 203 points on submap (0, 0) differs by translation 0.00 rotation 0.002 with score 88.7%.
+[rviz2-3] [INFO] [1744876929.086534298] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 60.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876929.278735951] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 60.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876929.470181906] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 61.070 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876929.500972134] [cartographer logger]: I0417 17:02:09.000000 86662 constraint_builder_2d.cc:275] Node (0, 223) with 206 points on submap (0, 0) differs by translation 0.00 rotation 0.001 with score 88.9%.
+[rviz2-3] [INFO] [1744876929.694847655] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 61.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876929.886806838] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 61.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876930.078396141] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 61.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876930.087459645] [cartographer logger]: I0417 17:02:10.000000 86663 constraint_builder_2d.cc:275] Node (0, 226) with 202 points on submap (0, 0) differs by translation 0.00 rotation 0.003 with score 88.3%.
+[rviz2-3] [INFO] [1744876930.302381576] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 61.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876930.476856256] [cartographer logger]: I0417 17:02:10.000000 86636 collated_trajectory_builder.cc:81] odom rate: 29.41 Hz 3.40e-02 s +/- 2.43e-16 s (pulsed at 99.38% real time)
+[cartographer_node-1] [INFO] [1744876930.476914551] [cartographer logger]: I0417 17:02:10.000000 86636 collated_trajectory_builder.cc:81] scan rate: 5.00 Hz 2.00e-01 s +/- 6.19e-04 s (pulsed at 99.50% real time)
+[rviz2-3] [INFO] [1744876930.494003363] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 62.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876930.686261829] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 62.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876930.878852853] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 62.470 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876930.905233531] [cartographer logger]: I0417 17:02:10.000000 86663 constraint_builder_2d.cc:275] Node (0, 230) with 214 points on submap (0, 0) differs by translation 0.00 rotation 0.004 with score 88.2%.
+[rviz2-3] [INFO] [1744876931.102465412] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 62.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876931.294441359] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 62.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876931.486507953] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 63.070 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876931.488924154] [cartographer logger]: I0417 17:02:11.000000 86662 constraint_builder_2d.cc:275] Node (0, 233) with 211 points on submap (0, 0) differs by translation 0.01 rotation 0.003 with score 87.5%.
+[rviz2-3] [INFO] [1744876931.710289075] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 63.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876931.902806379] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 63.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876932.094532755] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 63.669 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876932.104733373] [cartographer logger]: I0417 17:02:12.000000 86664 constraint_builder_2d.cc:275] Node (0, 236) with 217 points on submap (0, 0) differs by translation 0.00 rotation 0.000 with score 87.3%.
+[rviz2-3] [INFO] [1744876932.286737907] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 63.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876932.510779642] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 64.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876932.702526328] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 64.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876932.894263247] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 64.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876933.118112377] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 64.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876933.310624581] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 64.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876933.502573030] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 65.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876933.694949808] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 65.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876933.918665342] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 65.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876934.110683302] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 65.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876934.302335593] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 65.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876934.526294104] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 66.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876934.718625876] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 66.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876934.910901552] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 66.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876935.102791737] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 66.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876935.326870062] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 66.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876935.518892002] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 67.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876935.710455044] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 67.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876935.934720412] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 67.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876936.126277319] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 67.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876936.318364008] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 67.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876936.510773317] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 68.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876936.734245979] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 68.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876936.926918975] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 68.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876937.118081748] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 68.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876937.342054041] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 68.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876937.534820116] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 69.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876937.726268322] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 69.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876937.918617806] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 69.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876938.142471508] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 69.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876938.334995755] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 69.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876938.526579685] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 70.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876938.750321719] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 70.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876938.942593665] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 70.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876939.134087692] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 70.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876939.326902494] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 70.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876939.550303723] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 71.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876939.742081169] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 71.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876939.934772854] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 71.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876940.158305801] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 71.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876940.350275996] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 71.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876940.542651417] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 72.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876940.733998465] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 72.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876940.958534153] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 72.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876941.150393114] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 72.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876941.342225997] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 72.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876941.534183086] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 73.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876941.758912889] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 73.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876941.950985369] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 73.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876942.142352822] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 73.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876942.366695021] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 73.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876942.558460924] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 74.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876942.750226079] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 74.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876942.942948007] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 74.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876943.166500716] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 74.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876943.358119653] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 74.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876943.550970065] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 75.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876943.774312714] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 75.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876943.966114232] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 75.470 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876943.971860575] [cartographer logger]: I0417 17:02:23.000000 86663 constraint_builder_2d.cc:275] Node (0, 240) with 213 points on submap (0, 0) differs by translation 0.00 rotation 0.000 with score 89.0%.
+[rviz2-3] [INFO] [1744876944.158323276] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 75.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876944.383025701] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 75.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876944.574626682] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 76.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876944.766062919] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 76.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876944.958684789] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 76.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876945.182869981] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 76.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876945.375039462] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 76.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876945.560215316] [cartographer logger]: I0417 17:02:25.000000 86636 collated_trajectory_builder.cc:81] odom rate: 29.41 Hz 3.40e-02 s +/- 2.43e-16 s (pulsed at 99.37% real time)
+[cartographer_node-1] [INFO] [1744876945.560282261] [cartographer logger]: I0417 17:02:25.000000 86636 collated_trajectory_builder.cc:81] scan rate: 5.00 Hz 2.00e-01 s +/- 5.73e-04 s (pulsed at 99.51% real time)
+[rviz2-3] [INFO] [1744876945.567022849] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 77.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876945.758892434] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 77.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876945.982658747] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 77.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876946.174086179] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 77.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876946.366463664] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 77.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876946.590467222] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 78.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876946.782560202] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 78.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876946.974220613] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 78.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876947.166384903] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 78.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876947.390829399] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 78.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876947.582341007] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 79.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876947.774519605] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 79.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876947.966926926] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 79.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876948.190478327] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 79.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876948.382494202] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 79.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876948.574776476] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 80.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876948.798387575] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 80.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876948.990981976] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 80.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876949.182894079] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 80.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876949.406060658] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 80.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876949.598086874] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 81.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876949.790848675] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 81.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876949.982733441] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 81.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876950.206643530] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 81.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876950.398797201] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 81.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876950.590433264] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 82.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876950.783400287] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 82.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876951.007038869] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 82.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876951.198854712] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 82.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876951.390882036] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 82.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876951.614951809] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 83.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876951.806399632] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 83.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876951.998389162] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 83.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876952.190704055] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 83.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876952.414460103] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 83.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876952.605970982] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 84.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876952.798701442] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 84.270 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876952.822441682] [cartographer logger]: I0417 17:02:32.000000 86662 constraint_builder_2d.cc:275] Node (0, 243) with 214 points on submap (0, 0) differs by translation 0.01 rotation 0.006 with score 88.4%.
+[rviz2-3] [INFO] [1744876952.990291187] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 84.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876953.214177332] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 84.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876953.406242378] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 84.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876953.429874888] [cartographer logger]: I0417 17:02:33.000000 86664 constraint_builder_2d.cc:275] Node (0, 246) with 207 points on submap (0, 0) differs by translation 0.01 rotation 0.003 with score 88.4%.
+[rviz2-3] [INFO] [1744876953.598182027] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 85.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876953.822030033] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 85.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876954.014108262] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 85.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876954.206701253] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 85.669 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876954.213206060] [cartographer logger]: I0417 17:02:34.000000 86664 constraint_builder_2d.cc:275] Node (0, 250) with 205 points on submap (0, 0) differs by translation 0.01 rotation 0.004 with score 88.0%.
+[rviz2-3] [INFO] [1744876954.398577775] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 85.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876954.622218301] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 86.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876954.814334520] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 86.270 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876954.831956231] [cartographer logger]: I0417 17:02:34.000000 86662 constraint_builder_2d.cc:275] Node (0, 253) with 212 points on submap (0, 0) differs by translation 0.00 rotation 0.000 with score 88.6%.
+[rviz2-3] [INFO] [1744876955.006651493] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 86.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876955.231089889] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 86.669 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876955.418059612] [cartographer logger]: I0417 17:02:35.000000 86663 constraint_builder_2d.cc:275] Node (0, 256) with 200 points on submap (0, 0) differs by translation 0.01 rotation 0.003 with score 89.0%.
+[rviz2-3] [INFO] [1744876955.422430453] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 86.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876955.614839931] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 87.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876955.838274190] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 87.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876956.030149346] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 87.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876956.222138183] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 87.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876956.234734191] [cartographer logger]: I0417 17:02:36.000000 86663 constraint_builder_2d.cc:275] Node (0, 260) with 201 points on submap (0, 0) differs by translation 0.00 rotation 0.000 with score 88.5%.
+[rviz2-3] [INFO] [1744876956.414067426] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 87.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876956.638703217] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 88.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876956.831028018] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 88.270 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876956.848558073] [cartographer logger]: I0417 17:02:36.000000 86665 constraint_builder_2d.cc:275] Node (0, 263) with 207 points on submap (0, 0) differs by translation 0.01 rotation 0.004 with score 88.1%.
+[rviz2-3] [INFO] [1744876957.022033812] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 88.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876957.214779042] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 88.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876957.429754052] [cartographer logger]: I0417 17:02:37.000000 86664 constraint_builder_2d.cc:275] Node (0, 266) with 203 points on submap (0, 0) differs by translation 0.01 rotation 0.002 with score 89.3%.
+[rviz2-3] [INFO] [1744876957.438953923] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 88.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876957.630964761] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 89.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876957.822121050] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 89.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876958.046593483] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 89.470 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876958.048371929] [cartographer logger]: I0417 17:02:38.000000 86662 constraint_builder_2d.cc:275] Node (0, 0) with 200 points on submap (0, 1) differs by translation 0.01 rotation 0.006 with score 87.1%.
+[cartographer_node-1] [INFO] [1744876958.048430688] [cartographer logger]: I0417 17:02:38.000000 86665 constraint_builder_2d.cc:275] Node (0, 10) with 212 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 88.5%.
+[cartographer_node-1] [INFO] [1744876958.049835622] [cartographer logger]: I0417 17:02:38.000000 86663 constraint_builder_2d.cc:275] Node (0, 3) with 204 points on submap (0, 1) differs by translation 0.01 rotation 0.005 with score 88.3%.
+[cartographer_node-1] [INFO] [1744876958.050274775] [cartographer logger]: I0417 17:02:38.000000 86664 constraint_builder_2d.cc:275] Node (0, 13) with 203 points on submap (0, 1) differs by translation 0.01 rotation 0.000 with score 86.4%.
+[cartographer_node-1] [INFO] [1744876958.052459043] [cartographer logger]: I0417 17:02:38.000000 86665 constraint_builder_2d.cc:275] Node (0, 60) with 204 points on submap (0, 1) differs by translation 0.01 rotation 0.003 with score 87.9%.
+[cartographer_node-1] [INFO] [1744876958.052551648] [cartographer logger]: I0417 17:02:38.000000 86662 constraint_builder_2d.cc:275] Node (0, 56) with 215 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 88.7%.
+[cartographer_node-1] [INFO] [1744876958.053245229] [cartographer logger]: I0417 17:02:38.000000 86664 constraint_builder_2d.cc:275] Node (0, 66) with 206 points on submap (0, 1) differs by translation 0.01 rotation 0.002 with score 88.5%.
+[cartographer_node-1] [INFO] [1744876958.053369025] [cartographer logger]: I0417 17:02:38.000000 86663 constraint_builder_2d.cc:275] Node (0, 63) with 211 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 88.4%.
+[cartographer_node-1] [INFO] [1744876958.056182361] [cartographer logger]: I0417 17:02:38.000000 86665 constraint_builder_2d.cc:275] Node (0, 70) with 203 points on submap (0, 1) differs by translation 0.01 rotation 0.004 with score 87.7%.
+[cartographer_node-1] [INFO] [1744876958.056336447] [cartographer logger]: I0417 17:02:38.000000 86662 constraint_builder_2d.cc:275] Node (0, 73) with 212 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 89.1%.
+[cartographer_node-1] [INFO] [1744876958.057936432] [cartographer logger]: I0417 17:02:38.000000 86664 constraint_builder_2d.cc:275] Node (0, 76) with 208 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 89.0%.
+[cartographer_node-1] [INFO] [1744876958.057999702] [cartographer logger]: I0417 17:02:38.000000 86663 constraint_builder_2d.cc:275] Node (0, 80) with 205 points on submap (0, 1) differs by translation 0.01 rotation 0.000 with score 89.0%.
+[cartographer_node-1] [INFO] [1744876958.060402698] [cartographer logger]: I0417 17:02:38.000000 86662 constraint_builder_2d.cc:275] Node (0, 86) with 204 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 86.9%.
+[cartographer_node-1] [INFO] [1744876958.060503379] [cartographer logger]: I0417 17:02:38.000000 86665 constraint_builder_2d.cc:275] Node (0, 83) with 201 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 87.7%.
+[cartographer_node-1] [INFO] [1744876958.060783139] [cartographer logger]: I0417 17:02:38.000000 86664 constraint_builder_2d.cc:275] Node (0, 16) with 202 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 87.8%.
+[cartographer_node-1] [INFO] [1744876958.060982549] [cartographer logger]: I0417 17:02:38.000000 86663 constraint_builder_2d.cc:275] Node (0, 20) with 203 points on submap (0, 1) differs by translation 0.01 rotation 0.000 with score 88.4%.
+[cartographer_node-1] [INFO] [1744876958.062168454] [cartographer logger]: I0417 17:02:38.000000 86662 constraint_builder_2d.cc:275] Node (0, 23) with 201 points on submap (0, 1) differs by translation 0.01 rotation 0.003 with score 88.5%.
+[cartographer_node-1] [INFO] [1744876958.062281964] [cartographer logger]: I0417 17:02:38.000000 86665 constraint_builder_2d.cc:275] Node (0, 26) with 200 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 88.0%.
+[cartographer_node-1] [INFO] [1744876958.062524041] [cartographer logger]: I0417 17:02:38.000000 86664 constraint_builder_2d.cc:275] Node (0, 30) with 200 points on submap (0, 1) differs by translation 0.01 rotation 0.000 with score 87.5%.
+[cartographer_node-1] [INFO] [1744876958.062991983] [cartographer logger]: I0417 17:02:38.000000 86663 constraint_builder_2d.cc:275] Node (0, 33) with 200 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 88.2%.
+[cartographer_node-1] [INFO] [1744876958.064115430] [cartographer logger]: I0417 17:02:38.000000 86662 constraint_builder_2d.cc:275] Node (0, 36) with 205 points on submap (0, 1) differs by translation 0.01 rotation 0.000 with score 88.7%.
+[cartographer_node-1] [INFO] [1744876958.064504151] [cartographer logger]: I0417 17:02:38.000000 86665 constraint_builder_2d.cc:275] Node (0, 40) with 205 points on submap (0, 1) differs by translation 0.01 rotation 0.002 with score 87.9%.
+[cartographer_node-1] [INFO] [1744876958.064737994] [cartographer logger]: I0417 17:02:38.000000 86664 constraint_builder_2d.cc:275] Node (0, 43) with 206 points on submap (0, 1) differs by translation 0.01 rotation 0.001 with score 88.4%.
+[cartographer_node-1] [INFO] [1744876958.065046181] [cartographer logger]: I0417 17:02:38.000000 86663 constraint_builder_2d.cc:275] Node (0, 46) with 215 points on submap (0, 1) differs by translation 0.01 rotation 0.002 with score 88.0%.
+[cartographer_node-1] [INFO] [1744876958.066119561] [cartographer logger]: I0417 17:02:38.000000 86665 constraint_builder_2d.cc:275] Node (0, 53) with 201 points on submap (0, 1) differs by translation 0.01 rotation 0.002 with score 88.2%.
+[cartographer_node-1] [INFO] [1744876958.066135129] [cartographer logger]: I0417 17:02:38.000000 86662 constraint_builder_2d.cc:275] Node (0, 50) with 205 points on submap (0, 1) differs by translation 0.01 rotation 0.002 with score 89.1%.
+[cartographer_node-1] [INFO] [1744876958.066340213] [cartographer logger]: I0417 17:02:38.000000 86664 constraint_builder_2d.cc:275] Node (0, 6) with 202 points on submap (0, 1) differs by translation 0.01 rotation 0.004 with score 89.1%.
+[rviz2-3] [INFO] [1744876958.238051441] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 89.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876958.250995141] [cartographer logger]: I0417 17:02:38.000000 86636 pose_graph_2d.cc:148] Inserted submap (0, 3).
+[cartographer_node-1] [INFO] [1744876958.255857957] [cartographer logger]: I0417 17:02:38.000000 86662 constraint_builder_2d.cc:275] Node (0, 270) with 209 points on submap (0, 1) differs by translation 0.00 rotation 0.001 with score 88.9%.
+[cartographer_node-1] [INFO] [1744876958.256167343] [cartographer logger]: I0417 17:02:38.000000 86664 constraint_builder_2d.cc:275] Node (0, 270) with 209 points on submap (0, 0) differs by translation 0.01 rotation 0.002 with score 89.3%.
+[rviz2-3] [INFO] [1744876958.431010737] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 89.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876958.622155511] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 90.070 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876958.657886627] [cartographer logger]: I0417 17:02:38.000000 86663 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[cartographer_node-1] [INFO] [1744876958.658017151] [cartographer logger]: I0417 17:02:38.000000 86663 constraint_builder_2d.cc:290] 55 computations resulted in 55 additional constraints.
+[cartographer_node-1] [INFO] [1744876958.658228713] [cartographer logger]: I0417 17:02:38.000000 86663 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-1] Count: 56  Min: 0.863945  Max: 0.895356  Mean: 0.883473
+[cartographer_node-1] [0.863945, 0.867086)	                    	Count: 1 (1.78571%)	Total: 1 (1.78571%)
+[cartographer_node-1] [0.867086, 0.870227)	                    	Count: 1 (1.78571%)	Total: 2 (3.57143%)
+[cartographer_node-1] [0.870227, 0.873368)	                   #	Count: 2 (3.57143%)	Total: 4 (7.14286%)
+[cartographer_node-1] [0.873368, 0.876509)	                   #	Count: 2 (3.57143%)	Total: 6 (10.7143%)
+[cartographer_node-1] [0.876509, 0.879650)	                  ##	Count: 5 (8.92857%)	Total: 11 (19.6429%)
+[cartographer_node-1] [0.879650, 0.882792)	               #####	Count: 14 (25%)	Total: 25 (44.6429%)
+[cartographer_node-1] [0.882792, 0.885933)	               #####	Count: 13 (23.2143%)	Total: 38 (67.8571%)
+[cartographer_node-1] [0.885933, 0.889074)	                  ##	Count: 5 (8.92857%)	Total: 43 (76.7857%)
+[cartographer_node-1] [0.889074, 0.892215)	                ####	Count: 10 (17.8571%)	Total: 53 (94.6429%)
+[cartographer_node-1] [0.892215, 0.895356]	                   #	Count: 3 (5.35714%)	Total: 56 (100%)
+[cartographer_node-1] [INFO] [1744876958.831906650] [cartographer logger]: I0417 17:02:38.000000 86662 constraint_builder_2d.cc:275] Node (0, 273) with 203 points on submap (0, 0) differs by translation 0.00 rotation 0.000 with score 87.7%.
+[cartographer_node-1] [INFO] [1744876958.833590877] [cartographer logger]: I0417 17:02:38.000000 86664 constraint_builder_2d.cc:275] Node (0, 273) with 203 points on submap (0, 1) differs by translation 0.01 rotation 0.002 with score 88.0%.
+[rviz2-3] [INFO] [1744876958.847011286] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 90.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876959.038464960] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 90.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876959.230694552] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 90.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876959.444823710] [cartographer logger]: I0417 17:02:39.000000 86662 constraint_builder_2d.cc:275] Node (0, 276) with 204 points on submap (0, 1) differs by translation 0.01 rotation 0.003 with score 88.7%.
+[cartographer_node-1] [INFO] [1744876959.445008925] [cartographer logger]: I0417 17:02:39.000000 86663 constraint_builder_2d.cc:275] Node (0, 276) with 204 points on submap (0, 0) differs by translation 0.01 rotation 0.001 with score 89.2%.
+[rviz2-3] [INFO] [1744876959.454340191] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 90.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876959.646110775] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 91.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876959.838332162] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 91.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876960.030527496] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 91.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876960.254299531] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 91.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876960.266377349] [cartographer logger]: I0417 17:02:40.000000 86665 constraint_builder_2d.cc:275] Node (0, 280) with 207 points on submap (0, 0) differs by translation 0.01 rotation 0.002 with score 89.4%.
+[cartographer_node-1] [INFO] [1744876960.266552489] [cartographer logger]: I0417 17:02:40.000000 86663 constraint_builder_2d.cc:275] Node (0, 280) with 207 points on submap (0, 1) differs by translation 0.00 rotation 0.000 with score 87.3%.
+[rviz2-3] [INFO] [1744876960.446547585] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 91.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876960.630906748] [cartographer logger]: I0417 17:02:40.000000 86636 collated_trajectory_builder.cc:81] odom rate: 29.41 Hz 3.40e-02 s +/- 2.43e-16 s (pulsed at 99.47% real time)
+[cartographer_node-1] [INFO] [1744876960.630946900] [cartographer logger]: I0417 17:02:40.000000 86636 collated_trajectory_builder.cc:81] scan rate: 5.00 Hz 2.00e-01 s +/- 5.73e-04 s (pulsed at 99.56% real time)
+[rviz2-3] [INFO] [1744876960.638056309] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 92.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876960.830107101] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 92.270 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876960.847384141] [cartographer logger]: I0417 17:02:40.000000 86662 constraint_builder_2d.cc:275] Node (0, 283) with 212 points on submap (0, 0) differs by translation 0.00 rotation 0.001 with score 87.9%.
+[cartographer_node-1] [INFO] [1744876960.848654327] [cartographer logger]: I0417 17:02:40.000000 86664 constraint_builder_2d.cc:275] Node (0, 283) with 212 points on submap (0, 1) differs by translation 0.01 rotation 0.002 with score 88.5%.
+[rviz2-3] [INFO] [1744876961.054731163] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 92.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876961.246262004] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 92.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876961.439019618] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 92.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876961.460428255] [cartographer logger]: I0417 17:02:41.000000 86662 constraint_builder_2d.cc:275] Node (0, 286) with 202 points on submap (0, 1) differs by translation 0.00 rotation 0.002 with score 89.4%.
+[cartographer_node-1] [INFO] [1744876961.460578460] [cartographer logger]: I0417 17:02:41.000000 86663 constraint_builder_2d.cc:275] Node (0, 286) with 202 points on submap (0, 0) differs by translation 0.01 rotation 0.002 with score 88.2%.
+[rviz2-3] [INFO] [1744876961.662698435] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 93.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876961.854465310] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 93.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876962.046773556] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 93.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876962.238168528] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 93.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876962.451970662] [cartographer logger]: I0417 17:02:42.000000 86665 constraint_builder_2d.cc:275] Node (0, 290) with 207 points on submap (0, 1) differs by translation 0.01 rotation 0.000 with score 88.2%.
+[cartographer_node-1] [INFO] [1744876962.453345901] [cartographer logger]: I0417 17:02:42.000000 86664 constraint_builder_2d.cc:275] Node (0, 290) with 207 points on submap (0, 0) differs by translation 0.00 rotation 0.001 with score 88.9%.
+[rviz2-3] [INFO] [1744876962.462033834] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 93.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876962.654913993] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 94.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876962.846509652] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 94.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876963.070042845] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 94.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876963.262837927] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 94.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876963.454755605] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 94.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876963.646061241] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 95.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876963.870566056] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 95.270 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876964.055326811] [cartographer logger]: I0417 17:02:44.000000 86663 constraint_builder_2d.cc:275] Node (0, 293) with 204 points on submap (0, 0) differs by translation 0.01 rotation 0.004 with score 87.9%.
+[cartographer_node-1] [INFO] [1744876964.055379079] [cartographer logger]: I0417 17:02:44.000000 86665 constraint_builder_2d.cc:275] Node (0, 293) with 204 points on submap (0, 1) differs by translation 0.01 rotation 0.002 with score 88.5%.
+[rviz2-3] [INFO] [1744876964.062129179] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 95.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876964.254654876] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 95.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876964.478075939] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 95.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876964.670900022] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 96.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876964.862078082] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 96.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876965.054077897] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 96.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876965.278947119] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 96.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876965.470201850] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 96.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876965.662542557] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 97.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876965.854531622] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 97.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876966.078927805] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 97.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876966.270853868] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 97.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876966.462794737] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 97.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876966.686623479] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 98.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876966.878590665] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 98.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876967.070144763] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 98.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876967.200256138] [rviz2]: Trying to create a map of size 99 x 115 using 1 swatches
+[rviz2-3] [INFO] [1744876967.262878866] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 98.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876967.273665716] [cartographer logger]: I0417 17:02:47.000000 86662 constraint_builder_2d.cc:275] Node (0, 296) with 214 points on submap (0, 1) differs by translation 0.00 rotation 0.002 with score 77.2%.
+[cartographer_node-1] [INFO] [1744876967.273994208] [cartographer logger]: I0417 17:02:47.000000 86663 constraint_builder_2d.cc:275] Node (0, 296) with 214 points on submap (0, 0) differs by translation 0.01 rotation 0.004 with score 77.1%.
+[rviz2-3] [INFO] [1744876967.486787184] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 98.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876967.678048278] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 99.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876967.870330079] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 99.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876968.094572065] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 99.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876968.191656494] [rviz2]: Trying to create a map of size 101 x 115 using 1 swatches
+[rviz2-3] [INFO] [1744876968.286900400] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 99.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876968.478416253] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 99.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876968.702338495] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 100.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876968.894420156] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 100.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876969.086191756] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 100.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876969.278350773] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 100.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876969.502940906] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 100.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876969.694327943] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 101.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876969.887032817] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 101.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876970.078953542] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 101.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876970.208167507] [rviz2]: Trying to create a map of size 118 x 115 using 1 swatches
+[rviz2-3] [INFO] [1744876970.303041403] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 101.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876970.494510059] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 101.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876970.686940938] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 102.069 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876970.894090772] [cartographer logger]: I0417 17:02:50.000000 86636 motion_filter.cc:42] Motion filter reduced the number of nodes to 59.8%.
+[rviz2-3] [INFO] [1744876970.910379186] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 102.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876971.102067775] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 102.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876971.200351299] [rviz2]: Trying to create a map of size 123 x 115 using 1 swatches
+[rviz2-3] [INFO] [1744876971.294700018] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 102.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876971.518908059] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 102.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876971.710125924] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 103.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876971.902163531] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 103.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876972.094506182] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 103.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876972.318610023] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 103.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876972.510149678] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 103.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876972.702523365] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 104.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876972.926325755] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 104.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876973.118021957] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 104.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876973.215300495] [rviz2]: Trying to create a map of size 124 x 115 using 1 swatches
+[rviz2-3] [INFO] [1744876973.310771973] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 104.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876973.534417680] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 104.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876973.726845833] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 105.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876973.918306752] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 105.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876974.142276881] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 105.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876974.334653489] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 105.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876974.526511614] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 105.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876974.718839567] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 106.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876974.942461719] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 106.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876975.134690231] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 106.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876975.326754168] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 106.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876975.550523266] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 106.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876975.732565325] [cartographer logger]: I0417 17:02:55.000000 86636 collated_trajectory_builder.cc:81] odom rate: 29.41 Hz 3.40e-02 s +/- 2.43e-16 s (pulsed at 99.50% real time)
+[cartographer_node-1] [INFO] [1744876975.732710537] [cartographer logger]: I0417 17:02:55.000000 86636 collated_trajectory_builder.cc:81] scan rate: 5.00 Hz 2.00e-01 s +/- 6.08e-04 s (pulsed at 99.22% real time)
+[rviz2-3] [INFO] [1744876975.742541415] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 107.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876975.934529307] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 107.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876976.126749547] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 107.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876976.350227614] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 107.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876976.542225987] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 107.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876976.734782012] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 108.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876976.958534568] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 108.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876977.150866316] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 108.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876977.342401879] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 108.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876977.566283888] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 108.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876977.758461109] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 109.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876977.950219622] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 109.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876978.143119380] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 109.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876978.366035430] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 109.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876978.558915476] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 109.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876978.750058189] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 110.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876978.942995403] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 110.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876979.166259149] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 110.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876979.358340380] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 110.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876979.550770638] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 110.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876979.774116236] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 111.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876979.966891474] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 111.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876980.158923234] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 111.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876980.350441451] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 111.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876980.574478642] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 111.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876980.766131436] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 112.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876980.958208239] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 112.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876981.182044344] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 112.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876981.374753593] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 112.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876981.566266614] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 112.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876981.790694000] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 113.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876981.982426642] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 113.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876982.174695198] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 113.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876982.366714681] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 113.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876982.590459863] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 113.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876982.782957668] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 114.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876982.975019288] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 114.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876983.198972166] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 114.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876983.390141658] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 114.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876983.582149275] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 114.871 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876983.774388935] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 115.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876983.998339616] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 115.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876984.190097159] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 115.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876984.382509089] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 115.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876984.606143409] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 115.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876984.798532038] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 116.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876984.990760131] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 116.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876985.182649676] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 116.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876985.406863386] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 116.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876985.598662841] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 116.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876985.789998205] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 117.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876986.014250028] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 117.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876986.206709686] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 117.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876986.399010820] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 117.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876986.590798728] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 117.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876986.814125610] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 118.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876987.007049887] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 118.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876987.199011837] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 118.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876987.390563168] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 118.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876987.614335871] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 118.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876987.806579127] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 119.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876988.030806111] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 119.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876988.222466640] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 119.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876988.413961736] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 119.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876988.606435753] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 119.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876988.830818582] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 120.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876989.022562856] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 120.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876989.214412779] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 120.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876989.215887605] [rviz2]: Trying to create a map of size 124 x 116 using 1 swatches
+[rviz2-3] [INFO] [1744876989.438257997] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 120.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876989.630468914] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 120.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876989.822874724] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 121.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876990.046818874] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 121.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876990.238700787] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 121.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876990.430132139] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 121.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876990.623012592] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 121.869 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876990.822168853] [cartographer logger]: I0417 17:03:10.000000 86636 collated_trajectory_builder.cc:81] odom rate: 29.41 Hz 3.40e-02 s +/- 2.43e-16 s (pulsed at 99.31% real time)
+[cartographer_node-1] [INFO] [1744876990.822202557] [cartographer logger]: I0417 17:03:10.000000 86636 collated_trajectory_builder.cc:81] scan rate: 5.00 Hz 2.00e-01 s +/- 5.49e-04 s (pulsed at 99.46% real time)
+[rviz2-3] [INFO] [1744876990.846340256] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 122.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876991.039124733] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 122.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876991.231096581] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 122.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876991.454405163] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 122.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876991.646517123] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 122.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876991.838400554] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 123.069 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876992.030462115] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 123.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876992.254044388] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 123.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876992.446439171] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 123.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876992.638446130] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 123.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876992.863053204] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 124.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876993.055052838] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 124.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876993.246571051] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 124.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876993.438826872] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 124.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876993.662248909] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 124.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876993.854827938] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 125.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876994.046811917] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 125.269 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876994.270880588] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 125.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876994.462789742] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 125.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876994.654439785] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 125.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876994.846082886] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 126.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876995.070472967] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 126.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876995.262314970] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 126.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876995.454139165] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 126.670 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876995.474777657] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 0) with 200 points on submap (0, 2) differs by translation 0.00 rotation 0.003 with score 85.4%.
+[cartographer_node-1] [INFO] [1744876995.475077892] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 3) with 204 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 86.3%.
+[cartographer_node-1] [INFO] [1744876995.475161965] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 10) with 212 points on submap (0, 2) differs by translation 0.01 rotation 0.003 with score 87.9%.
+[cartographer_node-1] [INFO] [1744876995.476175798] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 6) with 202 points on submap (0, 2) differs by translation 0.01 rotation 0.000 with score 86.1%.
+[cartographer_node-1] [INFO] [1744876995.476782117] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 13) with 203 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 86.6%.
+[cartographer_node-1] [INFO] [1744876995.477012987] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 16) with 202 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 86.8%.
+[cartographer_node-1] [INFO] [1744876995.477371209] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 20) with 203 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 86.4%.
+[cartographer_node-1] [INFO] [1744876995.478701834] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 23) with 201 points on submap (0, 2) differs by translation 0.01 rotation 0.003 with score 84.3%.
+[cartographer_node-1] [INFO] [1744876995.478816935] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 26) with 200 points on submap (0, 2) differs by translation 0.01 rotation 0.000 with score 87.4%.
+[cartographer_node-1] [INFO] [1744876995.479112328] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 30) with 200 points on submap (0, 2) differs by translation 0.01 rotation 0.000 with score 86.8%.
+[cartographer_node-1] [INFO] [1744876995.479759707] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 33) with 200 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 86.5%.
+[cartographer_node-1] [INFO] [1744876995.480769992] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 40) with 205 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 88.0%.
+[cartographer_node-1] [INFO] [1744876995.480960549] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 43) with 206 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 86.6%.
+[cartographer_node-1] [INFO] [1744876995.481690119] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 46) with 215 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 86.2%.
+[cartographer_node-1] [INFO] [1744876995.482755809] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 36) with 205 points on submap (0, 2) differs by translation 0.01 rotation 0.000 with score 87.7%.
+[cartographer_node-1] [INFO] [1744876995.483172790] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 53) with 201 points on submap (0, 2) differs by translation 0.01 rotation 0.000 with score 85.8%.
+[cartographer_node-1] [INFO] [1744876995.483636560] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 50) with 205 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 87.3%.
+[cartographer_node-1] [INFO] [1744876995.484567695] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 56) with 215 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 86.2%.
+[cartographer_node-1] [INFO] [1744876995.485352430] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 63) with 211 points on submap (0, 2) differs by translation 0.01 rotation 0.003 with score 87.3%.
+[cartographer_node-1] [INFO] [1744876995.486029691] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 66) with 206 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 86.9%.
+[cartographer_node-1] [INFO] [1744876995.486574633] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 60) with 204 points on submap (0, 2) differs by translation 0.01 rotation 0.000 with score 87.5%.
+[cartographer_node-1] [INFO] [1744876995.487040252] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 70) with 203 points on submap (0, 2) differs by translation 0.01 rotation 0.003 with score 85.8%.
+[cartographer_node-1] [INFO] [1744876995.488246449] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 76) with 208 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 87.2%.
+[cartographer_node-1] [INFO] [1744876995.488263288] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 73) with 212 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 87.1%.
+[cartographer_node-1] [INFO] [1744876995.489185286] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 83) with 201 points on submap (0, 2) differs by translation 0.01 rotation 0.004 with score 86.6%.
+[cartographer_node-1] [INFO] [1744876995.489300979] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 80) with 205 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 87.3%.
+[cartographer_node-1] [INFO] [1744876995.490480038] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 90) with 204 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 86.8%.
+[cartographer_node-1] [INFO] [1744876995.490513759] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 86) with 204 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 86.0%.
+[cartographer_node-1] [INFO] [1744876995.491736265] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 96) with 200 points on submap (0, 2) differs by translation 0.01 rotation 0.000 with score 85.0%.
+[cartographer_node-1] [INFO] [1744876995.491767196] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 93) with 212 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 87.3%.
+[cartographer_node-1] [INFO] [1744876995.492362165] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 103) with 201 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 87.5%.
+[cartographer_node-1] [INFO] [1744876995.492960965] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 106) with 204 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 86.8%.
+[cartographer_node-1] [INFO] [1744876995.494043242] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 113) with 205 points on submap (0, 2) differs by translation 0.00 rotation 0.000 with score 87.1%.
+[cartographer_node-1] [INFO] [1744876995.494685095] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 116) with 205 points on submap (0, 2) differs by translation 0.00 rotation 0.001 with score 87.8%.
+[cartographer_node-1] [INFO] [1744876995.494743834] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 120) with 207 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 87.1%.
+[cartographer_node-1] [INFO] [1744876995.495512802] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 110) with 211 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 85.7%.
+[cartographer_node-1] [INFO] [1744876995.496053314] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 123) with 202 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 87.6%.
+[cartographer_node-1] [INFO] [1744876995.496721020] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 126) with 204 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 87.2%.
+[cartographer_node-1] [INFO] [1744876995.496766851] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 130) with 204 points on submap (0, 2) differs by translation 0.01 rotation 0.000 with score 86.5%.
+[cartographer_node-1] [INFO] [1744876995.498085284] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 100) with 203 points on submap (0, 2) differs by translation 0.01 rotation 0.005 with score 85.8%.
+[cartographer_node-1] [INFO] [1744876995.498576084] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 140) with 204 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 87.4%.
+[cartographer_node-1] [INFO] [1744876995.498706590] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 136) with 203 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 87.1%.
+[cartographer_node-1] [INFO] [1744876995.499612183] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 133) with 203 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 86.9%.
+[cartographer_node-1] [INFO] [1744876995.500175189] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 143) with 213 points on submap (0, 2) differs by translation 0.01 rotation 0.000 with score 86.9%.
+[cartographer_node-1] [INFO] [1744876995.500612703] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 150) with 203 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 87.4%.
+[cartographer_node-1] [INFO] [1744876995.501060103] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 146) with 206 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 86.4%.
+[cartographer_node-1] [INFO] [1744876995.502179368] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 156) with 212 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 87.4%.
+[cartographer_node-1] [INFO] [1744876995.502946818] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 153) with 202 points on submap (0, 2) differs by translation 0.01 rotation 0.005 with score 86.1%.
+[cartographer_node-1] [INFO] [1744876995.503183326] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 163) with 208 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 87.0%.
+[cartographer_node-1] [INFO] [1744876995.503273355] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 160) with 206 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 87.3%.
+[cartographer_node-1] [INFO] [1744876995.504518809] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 166) with 205 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 85.7%.
+[cartographer_node-1] [INFO] [1744876995.505075896] [cartographer logger]: I0417 17:03:15.000000 86663 constraint_builder_2d.cc:275] Node (0, 173) with 201 points on submap (0, 2) differs by translation 0.01 rotation 0.001 with score 87.0%.
+[cartographer_node-1] [INFO] [1744876995.505514055] [cartographer logger]: I0417 17:03:15.000000 86662 constraint_builder_2d.cc:275] Node (0, 176) with 210 points on submap (0, 2) differs by translation 0.01 rotation 0.003 with score 87.6%.
+[cartographer_node-1] [INFO] [1744876995.506278302] [cartographer logger]: I0417 17:03:15.000000 86664 constraint_builder_2d.cc:275] Node (0, 170) with 201 points on submap (0, 2) differs by translation 0.01 rotation 0.003 with score 87.3%.
+[cartographer_node-1] [INFO] [1744876995.674534101] [cartographer logger]: I0417 17:03:15.000000 86636 pose_graph_2d.cc:148] Inserted submap (0, 4).
+[rviz2-3] [INFO] [1744876995.679023069] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 126.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876995.679357038] [cartographer logger]: I0417 17:03:15.000000 86665 constraint_builder_2d.cc:275] Node (0, 360) with 208 points on submap (0, 2) differs by translation 0.00 rotation 0.001 with score 86.4%.
+[rviz2-3] [INFO] [1744876995.870577076] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 127.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876996.062267934] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 127.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876996.286246433] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 127.469 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876996.293308513] [cartographer logger]: I0417 17:03:16.000000 86663 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[cartographer_node-1] [INFO] [1744876996.298174990] [cartographer logger]: I0417 17:03:16.000000 86664 constraint_builder_2d.cc:275] Node (0, 363) with 202 points on submap (0, 2) differs by translation 0.00 rotation 0.000 with score 87.1%.
+[cartographer_node-1] [INFO] [1744876996.298219779] [cartographer logger]: I0417 17:03:16.000000 86664 constraint_builder_2d.cc:290] 112 computations resulted in 72 additional constraints.
+[cartographer_node-1] [INFO] [1744876996.298248570] [cartographer logger]: I0417 17:03:16.000000 86664 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-1] Count: 128  Min: 0.771211  Max: 0.895356  Mean: 0.874922
+[cartographer_node-1] [0.771211, 0.783626)	                    	Count: 2 (1.5625%)	Total: 2 (1.5625%)
+[cartographer_node-1] [0.783626, 0.796040)	                    	Count: 0 (0%)	Total: 2 (1.5625%)
+[cartographer_node-1] [0.796040, 0.808455)	                    	Count: 0 (0%)	Total: 2 (1.5625%)
+[cartographer_node-1] [0.808455, 0.820869)	                    	Count: 0 (0%)	Total: 2 (1.5625%)
+[cartographer_node-1] [0.820869, 0.833284)	                    	Count: 0 (0%)	Total: 2 (1.5625%)
+[cartographer_node-1] [0.833284, 0.845698)	                    	Count: 1 (0.78125%)	Total: 3 (2.34375%)
+[cartographer_node-1] [0.845698, 0.858113)	                   #	Count: 4 (3.125%)	Total: 7 (5.46875%)
+[cartographer_node-1] [0.858113, 0.870527)	               #####	Count: 29 (22.6562%)	Total: 36 (28.125%)
+[cartographer_node-1] [0.870527, 0.882942)	           #########	Count: 56 (43.75%)	Total: 92 (71.875%)
+[cartographer_node-1] [0.882942, 0.895356]	              ######	Count: 36 (28.125%)	Total: 128 (100%)
+[rviz2-3] [INFO] [1744876996.478792138] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 127.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876996.670657858] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 127.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876996.863002845] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 128.070 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876996.879122847] [cartographer logger]: I0417 17:03:16.000000 86662 constraint_builder_2d.cc:275] Node (0, 366) with 210 points on submap (0, 2) differs by translation 0.00 rotation 0.003 with score 87.5%.
+[rviz2-3] [INFO] [1744876997.086840063] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 128.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876997.278773918] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 128.469 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876997.470063467] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 128.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876997.694344544] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 128.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876997.697032712] [cartographer logger]: I0417 17:03:17.000000 86664 constraint_builder_2d.cc:275] Node (0, 370) with 214 points on submap (0, 2) differs by translation 0.00 rotation 0.001 with score 87.5%.
+[rviz2-3] [INFO] [1744876997.886868705] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 129.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876998.078916625] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 129.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876998.270488926] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 129.470 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876998.276992233] [cartographer logger]: I0417 17:03:18.000000 86664 constraint_builder_2d.cc:275] Node (0, 373) with 200 points on submap (0, 2) differs by translation 0.00 rotation 0.003 with score 87.6%.
+[rviz2-3] [INFO] [1744876998.494490566] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 129.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876998.686130403] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 129.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876998.878693894] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 130.069 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876998.892745323] [cartographer logger]: I0417 17:03:18.000000 86662 constraint_builder_2d.cc:275] Node (0, 376) with 207 points on submap (0, 2) differs by translation 0.00 rotation 0.000 with score 87.4%.
+[rviz2-3] [INFO] [1744876999.102407173] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 130.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876999.294294958] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 130.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876999.486047661] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 130.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744876999.678951919] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 130.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744876999.715051367] [cartographer logger]: I0417 17:03:19.000000 86663 constraint_builder_2d.cc:275] Node (0, 380) with 206 points on submap (0, 2) differs by translation 0.00 rotation 0.005 with score 87.3%.
+[rviz2-3] [INFO] [1744876999.902065023] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 131.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877000.094647696] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 131.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877000.286133991] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 131.470 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877000.291624088] [cartographer logger]: I0417 17:03:20.000000 86664 constraint_builder_2d.cc:275] Node (0, 383) with 202 points on submap (0, 2) differs by translation 0.00 rotation 0.002 with score 88.4%.
+[rviz2-3] [INFO] [1744877000.478225336] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 131.669 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877000.703134620] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 131.869 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877000.894109176] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 132.070 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877000.914957972] [cartographer logger]: I0417 17:03:20.000000 86662 constraint_builder_2d.cc:275] Node (0, 386) with 207 points on submap (0, 2) differs by translation 0.00 rotation 0.000 with score 87.6%.
+[rviz2-3] [INFO] [1744877001.086968531] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 132.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877001.310621914] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 132.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877001.502903733] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 132.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877001.694907948] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 132.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877001.699052826] [cartographer logger]: I0417 17:03:21.000000 86665 constraint_builder_2d.cc:275] Node (0, 390) with 211 points on submap (0, 2) differs by translation 0.00 rotation 0.003 with score 87.3%.
+[rviz2-3] [INFO] [1744877001.918125141] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 133.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877002.110079553] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 133.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877002.302781684] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 133.469 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877002.319022951] [cartographer logger]: I0417 17:03:22.000000 86665 constraint_builder_2d.cc:275] Node (0, 393) with 204 points on submap (0, 2) differs by translation 0.00 rotation 0.001 with score 85.9%.
+[rviz2-3] [INFO] [1744877002.494782916] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 133.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877002.718800821] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 133.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877002.910475033] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 134.070 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877002.929444774] [cartographer logger]: I0417 17:03:22.000000 86662 constraint_builder_2d.cc:275] Node (0, 396) with 202 points on submap (0, 2) differs by translation 0.00 rotation 0.003 with score 88.2%.
+[rviz2-3] [INFO] [1744877003.102684387] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 134.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877003.294376720] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 134.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877003.518339926] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 134.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877003.710436389] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 134.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877003.715948932] [cartographer logger]: I0417 17:03:23.000000 86664 constraint_builder_2d.cc:275] Node (0, 400) with 209 points on submap (0, 2) differs by translation 0.00 rotation 0.001 with score 88.9%.
+[rviz2-3] [INFO] [1744877003.902354432] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 135.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877004.127013506] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 135.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877004.318884963] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 135.470 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877004.327788590] [cartographer logger]: I0417 17:03:24.000000 86665 constraint_builder_2d.cc:275] Node (0, 403) with 202 points on submap (0, 2) differs by translation 0.00 rotation 0.003 with score 88.4%.
+[rviz2-3] [INFO] [1744877004.510446064] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 135.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877004.702939875] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 135.869 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877004.918593816] [cartographer logger]: I0417 17:03:24.000000 86663 constraint_builder_2d.cc:275] Node (0, 406) with 204 points on submap (0, 2) differs by translation 0.01 rotation 0.004 with score 85.5%.
+[rviz2-3] [INFO] [1744877004.926063271] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 136.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877005.118601223] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 136.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877005.310444876] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 136.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877005.534222080] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 136.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877005.726194346] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 136.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877005.740416970] [cartographer logger]: I0417 17:03:25.000000 86664 constraint_builder_2d.cc:275] Node (0, 410) with 200 points on submap (0, 2) differs by translation 0.00 rotation 0.001 with score 88.3%.
+[cartographer_node-1] [INFO] [1744877005.918672449] [cartographer logger]: I0417 17:03:25.000000 86636 collated_trajectory_builder.cc:81] odom rate: 29.41 Hz 3.40e-02 s +/- 2.43e-16 s (pulsed at 99.30% real time)
+[cartographer_node-1] [INFO] [1744877005.918727637] [cartographer logger]: I0417 17:03:25.000000 86636 collated_trajectory_builder.cc:81] scan rate: 5.00 Hz 2.00e-01 s +/- 5.23e-04 s (pulsed at 99.44% real time)
+[rviz2-3] [INFO] [1744877005.918870796] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 137.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877006.142248086] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 137.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877006.334675569] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 137.470 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877006.350081059] [cartographer logger]: I0417 17:03:26.000000 86664 constraint_builder_2d.cc:275] Node (0, 413) with 204 points on submap (0, 2) differs by translation 0.00 rotation 0.000 with score 87.2%.
+[rviz2-3] [INFO] [1744877006.526091671] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 137.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877006.718648330] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 137.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877006.935165216] [cartographer logger]: I0417 17:03:26.000000 86665 constraint_builder_2d.cc:275] Node (0, 416) with 208 points on submap (0, 2) differs by translation 0.00 rotation 0.002 with score 88.3%.
+[rviz2-3] [INFO] [1744877006.942831466] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 138.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877007.134606796] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 138.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877007.326741323] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 138.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877007.550709599] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 138.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877007.742526361] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 138.870 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877007.749530899] [cartographer logger]: I0417 17:03:27.000000 86663 constraint_builder_2d.cc:275] Node (0, 420) with 209 points on submap (0, 2) differs by translation 0.00 rotation 0.002 with score 87.4%.
+[rviz2-3] [INFO] [1744877007.934585268] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 139.070 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877008.126915530] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 139.270 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877008.335057808] [cartographer logger]: I0417 17:03:28.000000 86664 constraint_builder_2d.cc:275] Node (0, 423) with 203 points on submap (0, 2) differs by translation 0.00 rotation 0.001 with score 87.4%.
+[rviz2-3] [INFO] [1744877008.350914969] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 139.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877008.542605419] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 139.670 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877008.734263243] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 139.870 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877008.926379468] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 140.070 for reason 'discarding message because the queue is full'
+[cartographer_node-1] [INFO] [1744877008.945061443] [cartographer logger]: I0417 17:03:28.000000 86662 constraint_builder_2d.cc:275] Node (0, 426) with 205 points on submap (0, 2) differs by translation 0.00 rotation 0.004 with score 88.2%.
+[rviz2-3] [INFO] [1744877009.150897241] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 140.270 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877009.342999448] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 140.470 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1744877009.534381801] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 140.670 for reason 'discarding message because the queue is full'
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[cartographer_node-1] [INFO] [1744877009.610149019] [rclcpp]: signal_handler(signum=2)
+[rviz2-3] [INFO] [1744877009.610208947] [rclcpp]: signal_handler(signum=2)
+[cartographer_occupancy_grid_node-2] [INFO] [1744877009.610228845] [rclcpp]: signal_handler(signum=2)
+[cartographer_node-1] [INFO] [1744877009.612279949] [cartographer logger]: I0417 17:03:29.000000 86636 node.cpp:569] Shutdown the subscriber of [scan]
+[cartographer_node-1] [INFO] [1744877009.613357055] [cartographer logger]: I0417 17:03:29.000000 86636 node.cpp:569] Shutdown the subscriber of [odom]
+[cartographer_node-1] [INFO] [1744877009.613425692] [cartographer logger]: I0417 17:03:29.000000 86636 map_builder_bridge.cpp:155] Finishing trajectory with ID '0'...
+[cartographer_node-1] [WARN] [1744877009.613615114] [cartographer logger]: W0417 17:03:29.000000 86636 node.cpp:773] Can't run final optimization if there are one or more active trajectories. Trying to finish trajectory with ID 0 now.
+[cartographer_node-1] [INFO] [1744877009.613663930] [cartographer logger]: I0417 17:03:29.000000 86665 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[cartographer_node-1] [INFO] [1744877009.613745241] [cartographer logger]: I0417 17:03:29.000000 86636 node.cpp:551] Trajectory 0 already pending to finish.
+[cartographer_node-1] [INFO] [1744877009.613844125] [cartographer logger]: I0417 17:03:29.000000 86636 map_builder_bridge.cpp:164] Running final trajectory optimization...
+[cartographer_node-1] [INFO] [1744877009.613922753] [cartographer logger]: I0417 17:03:29.000000 86665 constraint_builder_2d.cc:290] 57 computations resulted in 19 additional constraints.
+[cartographer_node-1] [INFO] [1744877009.614012539] [cartographer logger]: I0417 17:03:29.000000 86665 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-1] Count: 147  Min: 0.771211  Max: 0.895356  Mean: 0.875061
+[cartographer_node-1] [0.771211, 0.783626)	                    	Count: 2 (1.36054%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.783626, 0.796040)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.796040, 0.808455)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.808455, 0.820869)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.820869, 0.833284)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.833284, 0.845698)	                    	Count: 1 (0.680272%)	Total: 3 (2.04082%)
+[cartographer_node-1] [0.845698, 0.858113)	                   #	Count: 5 (3.40136%)	Total: 8 (5.44218%)
+[cartographer_node-1] [0.858113, 0.870527)	                ####	Count: 30 (20.4082%)	Total: 38 (25.8503%)
+[cartographer_node-1] [0.870527, 0.882942)	           #########	Count: 69 (46.9388%)	Total: 107 (72.7891%)
+[cartographer_node-1] [0.882942, 0.895356]	               #####	Count: 40 (27.2109%)	Total: 147 (100%)
+[cartographer_node-1] [INFO] [1744877009.649110701] [cartographer logger]: I0417 17:03:29.000000 86665 pose_graph_2d.cc:538] Remaining work items in queue: 1
+[cartographer_node-1] [INFO] [1744877009.649147285] [cartographer logger]: I0417 17:03:29.000000 86665 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[cartographer_node-1] [INFO] [1744877009.649214393] [cartographer logger]: I0417 17:03:29.000000 86665 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-1] Count: 147  Min: 0.771211  Max: 0.895356  Mean: 0.875061
+[cartographer_node-1] [0.771211, 0.783626)	                    	Count: 2 (1.36054%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.783626, 0.796040)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.796040, 0.808455)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.808455, 0.820869)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.820869, 0.833284)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.833284, 0.845698)	                    	Count: 1 (0.680272%)	Total: 3 (2.04082%)
+[cartographer_node-1] [0.845698, 0.858113)	                   #	Count: 5 (3.40136%)	Total: 8 (5.44218%)
+[cartographer_node-1] [0.858113, 0.870527)	                ####	Count: 30 (20.4082%)	Total: 38 (25.8503%)
+[cartographer_node-1] [0.870527, 0.882942)	           #########	Count: 69 (46.9388%)	Total: 107 (72.7891%)
+[cartographer_node-1] [0.882942, 0.895356]	               #####	Count: 40 (27.2109%)	Total: 147 (100%)
+[cartographer_node-1] [INFO] [1744877009.663071196] [cartographer logger]: I0417 17:03:29.000000 86663 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[cartographer_node-1] [INFO] [1744877009.663108732] [cartographer logger]: I0417 17:03:29.000000 86663 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-1] Count: 147  Min: 0.771211  Max: 0.895356  Mean: 0.875061
+[cartographer_node-1] [0.771211, 0.783626)	                    	Count: 2 (1.36054%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.783626, 0.796040)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.796040, 0.808455)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.808455, 0.820869)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.820869, 0.833284)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.833284, 0.845698)	                    	Count: 1 (0.680272%)	Total: 3 (2.04082%)
+[cartographer_node-1] [0.845698, 0.858113)	                   #	Count: 5 (3.40136%)	Total: 8 (5.44218%)
+[cartographer_node-1] [0.858113, 0.870527)	                ####	Count: 30 (20.4082%)	Total: 38 (25.8503%)
+[cartographer_node-1] [0.870527, 0.882942)	           #########	Count: 69 (46.9388%)	Total: 107 (72.7891%)
+[cartographer_node-1] [0.882942, 0.895356]	               #####	Count: 40 (27.2109%)	Total: 147 (100%)
+[cartographer_node-1] [KOptimizing: Done.     
+[cartographer_node-1] [INFO] [1744877009.666920239] [cartographer logger]: I0417 17:03:29.000000 86662 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[cartographer_node-1] [INFO] [1744877009.666958171] [cartographer logger]: I0417 17:03:29.000000 86662 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-1] Count: 147  Min: 0.771211  Max: 0.895356  Mean: 0.875061
+[cartographer_node-1] [0.771211, 0.783626)	                    	Count: 2 (1.36054%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.783626, 0.796040)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.796040, 0.808455)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.808455, 0.820869)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.820869, 0.833284)	                    	Count: 0 (0%)	Total: 2 (1.36054%)
+[cartographer_node-1] [0.833284, 0.845698)	                    	Count: 1 (0.680272%)	Total: 3 (2.04082%)
+[cartographer_node-1] [0.845698, 0.858113)	                   #	Count: 5 (3.40136%)	Total: 8 (5.44218%)
+[cartographer_node-1] [0.858113, 0.870527)	                ####	Count: 30 (20.4082%)	Total: 38 (25.8503%)
+[cartographer_node-1] [0.870527, 0.882942)	           #########	Count: 69 (46.9388%)	Total: 107 (72.7891%)
+[cartographer_node-1] [0.882942, 0.895356]	               #####	Count: 40 (27.2109%)	Total: 147 (100%)
+[cartographer_node-1] [KOptimizing: Done.     
+[INFO] [cartographer_occupancy_grid_node-2]: process has finished cleanly [pid 86638]
+[INFO] [cartographer_node-1]: process has finished cleanly [pid 86636]
+[INFO] [rviz2-3]: process has finished cleanly [pid 86640]

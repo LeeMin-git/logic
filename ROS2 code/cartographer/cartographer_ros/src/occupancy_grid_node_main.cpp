@@ -100,7 +100,7 @@ Node::Node(const double resolution, const double publish_period_sec)
         rmw_qos_profile_services_default,
 #endif
         callback_group_
-        ); //LM submapquery의 메세지 명으로 client 선언 -> submap의 텍스처 데이터를 요청하기 위한 클라이언트임.
+        ); //LM submap_query의 메세지 명으로 client 선언 -> submap의 텍스처 데이터를 요청하기 위한 클라이언트임.
 
   occupancy_grid_publisher_ = this->create_publisher<::nav_msgs::msg::OccupancyGrid>(
       kOccupancyGridTopic, rclcpp::QoS(10).transient_local()); //LM map의 메세지 명으로 publisher 생성
@@ -190,7 +190,7 @@ void Node::DrawAndPublish() {
   std::unique_ptr<nav_msgs::msg::OccupancyGrid> msg_ptr = CreateOccupancyGridMsg(
       painted_slices, resolution_, last_frame_id_, last_timestamp_); //LM 2D map 이미지를 ROS2 occupancyGrid 메세지로 변환
   occupancy_grid_publisher_->publish(*msg_ptr); //LM 변환한 메세지 일정 주기마다 pub
-}
+}//LM 일정 주기마다 map 메세지로 데이터 전송
 
 }  // namespace
 }  // namespace cartographer_ros

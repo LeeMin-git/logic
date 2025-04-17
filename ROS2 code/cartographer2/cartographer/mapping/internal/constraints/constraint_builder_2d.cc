@@ -289,7 +289,7 @@ void ConstraintBuilder2D::RunWhenDoneCallback() {
     if (options_.log_matches()) {
       LOG(INFO) << constraints_.size() << " computations resulted in "
                 << result.size() << " additional constraints.";
-      LOG(INFO) << "Score histogram:\n" << score_histogram_.ToString(10);
+      g << "Score histogram:\n" << score_histogram_.ToString(10);
     }
     constraints_.clear();
     callback = std::move(when_done_);
@@ -297,7 +297,7 @@ void ConstraintBuilder2D::RunWhenDoneCallback() {
     kQueueLengthMetric->Set(constraints_.size());
   }
   (*callback)(result);
-}
+}//LM 여기를 계속탐.
 
 int ConstraintBuilder2D::GetNumFinishedNodes() {
   absl::MutexLock locker(&mutex_);
