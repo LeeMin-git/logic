@@ -77,5 +77,6 @@
         "xtr1common": "cpp",
         "xtree": "cpp",
         "xutility": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "C:/Users/Cowintech/Documents/logic/ROS2 code/cartographer/cartographer_ros"
 }

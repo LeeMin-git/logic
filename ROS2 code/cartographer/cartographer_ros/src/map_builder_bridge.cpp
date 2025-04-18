@@ -132,7 +132,7 @@ int MapBuilderBridge::AddTrajectory(
                  const ::cartographer::mapping::TrajectoryBuilderInterface::
                      InsertionResult>) {
         OnLocalSlamResult(trajectory_id, time, local_pose, range_data_in_local);
-      }); //LM AddTrajectoryBuilder는 소스 코드를 확인할 수 없음.
+      });
       //LM 콜백함수(람다)를 실행하고 trajectory_id 값을 return 받는다.
       //LM 결국 인자로 받아오는 값들을 사용하여 local_slam_data_에 추가함.
   LOG(INFO) << "Added trajectory with ID '" << trajectory_id << "'.";
@@ -529,7 +529,7 @@ visualization_msgs::msg::MarkerArray MapBuilderBridge::GetConstraintList(rclcpp:
 
 SensorBridge* MapBuilderBridge::sensor_bridge(const int trajectory_id) {
   return sensor_bridges_.at(trajectory_id).get();
-}//LM trajectory_id의 key 값으로 하는 value를 가져옴
+}//LM sensor_bridges_ 스마트 포인터 객체에 접근
 
 void MapBuilderBridge::OnLocalSlamResult(
     const int trajectory_id, const ::cartographer::common::Time time,

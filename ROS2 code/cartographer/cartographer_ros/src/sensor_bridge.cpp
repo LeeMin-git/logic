@@ -198,7 +198,8 @@ void SensorBridge::HandleLaserScan(
         points.points.size() * (i + 1) / num_subdivisions_per_laser_scan_;
     carto::sensor::TimedPointCloud subdivision(
         points.points.begin() + start_index, points.points.begin() + end_index);
-        //LM subdivision의 마지막 포인트시간은 0에 가까움 -> 이해안됨.
+        //LM subdivision의 마지막 포인트시간은 0에 가까움 -> 스켄 종료 시간을 기준으로 시간을 측정함.
+        // 따라서 가장 최근 포인터의 시간이 0에 가까운 값임.
     if (start_index == end_index) {
       continue;
     }

@@ -244,7 +244,7 @@ void Node::AddSensorSamplers(const int trajectory_id,
           options.rangefinder_sampling_ratio, options.odometry_sampling_ratio,
           options.fixed_frame_pose_sampling_ratio, options.imu_sampling_ratio,
           options.landmarks_sampling_ratio));
-}
+} //LM key = trajectory_id, value = 그 아래
 
 void Node::PublishLocalTrajectoryData() {
   absl::MutexLock lock(&mutex_);
