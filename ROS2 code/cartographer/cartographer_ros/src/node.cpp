@@ -252,6 +252,7 @@ void Node::PublishLocalTrajectoryData() {
     const auto& trajectory_data = entry.second;
 
     auto& extrapolator = extrapolators_.at(entry.first);
+    //LM map_builder_bridge_에서 trajectory_id를 가져옴, extraplators_에서 trajectory_id에 해당하는 스마트 포인터 가져옴.
     // We only publish a point cloud if it has changed. It is not needed at high
     // frequency, and republishing it would be computationally wasteful.
     if (trajectory_data.local_slam_data->time !=

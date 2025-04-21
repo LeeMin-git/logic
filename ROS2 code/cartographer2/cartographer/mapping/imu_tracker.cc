@@ -42,7 +42,7 @@ void ImuTracker::Advance(const common::Time time) {
   const Eigen::Quaterniond rotation =
       transform::AngleAxisVectorToRotationQuaternion(
           Eigen::Vector3d(imu_angular_velocity_ * delta_t));
-  orientation_ = (orientation_ * rotation).normalized();
+  orientation_ = (orientation_ * rotation).normalized(); //LM 방향의 그대로 크기의 합이 1이 되도록 변경하는 함수.
   gravity_vector_ = rotation.conjugate() * gravity_vector_;
   time_ = time;
 }

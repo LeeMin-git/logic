@@ -214,7 +214,7 @@ void PoseExtrapolator::AdvanceImuTracker(const common::Time time,
       imu_data_.begin(), imu_data_.end(), imu_tracker->time(),
       [](const sensor::ImuData& imu_data, const common::Time& time) {
         return imu_data.time < time;
-      });
+      });//LM imu_tracker의 시간 보다 크거나 같은 imu_data_ 위치를 알려줌
   while (it != imu_data_.end() && it->time < time) {
     imu_tracker->Advance(it->time);
     imu_tracker->AddImuLinearAccelerationObservation(it->linear_acceleration);
