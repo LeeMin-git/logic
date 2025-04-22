@@ -80,7 +80,7 @@ PaintSubmapSlicesResult PaintSubmapSlices(
     const auto update_bounding_box = [&bounding_box, &cr](double x, double y) {
       cairo_user_to_device(cr.get(), &x, &y);
       bounding_box.extend(Eigen::Vector2f(x, y));
-    };
+    }; //LM 서브맵의 범위를 알아내기 위해 임시로 도화지(surface)와 펜을 생성함.
 
     CairoPaintSubmapSlices(
         1. / resolution, submaps, cr.get(),
@@ -89,20 +89,20 @@ PaintSubmapSlicesResult PaintSubmapSlices(
           update_bounding_box(submap_slice.width, 0);
           update_bounding_box(0, submap_slice.height);
           update_bounding_box(submap_slice.width, submap_slice.height);
-        });
+        }); //LM 서브맵들 각각에 대해 bounding box 확장 (람다 함수임.)
   }
 
-  const int kPaddingPixel = 5;
+  const int kPaddingPixel = 5; //LM 서브맵을 그릴때 5pixel 정도의 여백을 줌
   const Eigen::Array2i size(
       std::ceil(bounding_box.sizes().x()) + 2 * kPaddingPixel,
-      std::ceil(bounding_box.sizes().y()) + 2 * kPaddingPixel);
+      std::ceil(bounding_box.sizes().y()) + 2 * kPaddingPixel); //LM 전체 도화지의 크기 (ceil은 반올림 함수임.)
   const Eigen::Array2f origin(-bounding_box.min().x() + kPaddingPixel,
-                              -bounding_box.min().y() + kPaddingPixel);
+                              -bounding_box.min().y() + kPaddingPixel); //LM 좌표 원점 조정
 
   auto surface = MakeUniqueCairoSurfacePtr(
-      cairo_image_surface_create(kCairoFormat, size.x(), size.y()));
+      cairo_image_surface_create(kCairoFormat, size.x(), size.y())); //LM 실제 사용할 전체 도화지 생성
   {
-    auto cr = MakeUniqueCairoPtr(cairo_create(surface.get()));
+    auto cr = MakeUniqueCairoPtr(cairo_create(surface.get())); //LM 실제 사용할 펜 생성
     cairo_set_source_rgba(cr.get(), 0.5, 0.0, 0.0, 1.);
     cairo_paint(cr.get());
     cairo_translate(cr.get(), origin.x(), origin.y());

@@ -119,26 +119,25 @@ Node::Node(const double resolution, const double publish_period_sec)
     // We do not do any work if nobody listens.
     if (this->count_publishers(kSubmapListTopic) == 0){
       return;
-    }
+    } //LM 'summap_list'의 토픽을 구독하는 publisher의 개수
 
     // Keep track of submap IDs that don't appear in the message anymore.
     std::set<SubmapId> submap_ids_to_delete;
     for (const auto& pair : submap_slices_) {
       submap_ids_to_delete.insert(pair.first); //LM (SubmapId, SubmapSlice)를 갖는 변수에서 submap_ids_to_delete에 pair.first의 키 값(submapId)을 넣는다.
-    } //LM submap_slice_ 선언만 있고 값을 넣는 부분이 안보이는데 어떻게 값을 갖는거지?
-      //LM -> SubmapSlice& submap_slice = submap_slices_[id]; 부분 참조
+    } //LM 우선은 지워질 후보에 추가함. 추후에 현재 msg와 비교하여 실제 존재하는 곳이면 지워질 후보에서 제외시킴.
     
     //LM submap_list 메세지 명으로 받아오는 값 = msg
     for (const auto& submap_msg : msg->submap) {
       const SubmapId id{submap_msg.trajectory_id, submap_msg.submap_index}; //LM 구조체를 구성하는 코드
-      submap_ids_to_delete.erase(id);
+      submap_ids_to_delete.erase(id); //LM 현재 위치한 곳이기 때문에 해당 id를 삭제하면 안되므로
       if ((submap_msg.is_frozen && !FLAGS_include_frozen_submaps) ||
           (!submap_msg.is_frozen && !FLAGS_include_unfrozen_submaps)) {
         continue;
       }
       SubmapSlice& submap_slice = submap_slices_[id]; //LM submap_slice_[id]에 submap_slice라는 이름 부여
-      submap_slice.pose = ToRigid3d(submap_msg.pose);
-      submap_slice.metadata_version = submap_msg.submap_version;
+      submap_slice.pose = ToRigid3d(submap_msg.pose); //LM 메세지를 통해 얻어 온 pose 값 저장
+      submap_slice.metadata_version = submap_msg.submap_version; //LM 메세지에 표시되는 submap_version 저장
       if (submap_slice.surface != nullptr &&
           submap_slice.version == submap_msg.submap_version) {
         continue;
@@ -146,7 +145,7 @@ Node::Node(const double resolution, const double publish_period_sec)
 
       auto fetched_textures = cartographer_ros::FetchSubmapTextures(
             id, client_, callback_group_executor_,
-            std::chrono::milliseconds(int(publish_period_sec * 1000))); //LM client_를 통해 submap의 texture데이터를 요청
+            std::chrono::milliseconds(int(publish_period_sec * 1000))); //LM client_를 통해 submap의 이미지 형태의 맵 데이터(texture)를 요청
       if (fetched_textures == nullptr) {
         continue;
       }
@@ -186,11 +185,11 @@ void Node::DrawAndPublish() {
   if (submap_slices_.empty() || last_frame_id_.empty()) {
     return;
   }
-  auto painted_slices = PaintSubmapSlices(submap_slices_, resolution_); //LM submap_slices를 하나의 큰 이미지로 합쳐 그림. cairo 사용
+  auto painted_slices = PaintSubmapSlices(submap_slices_, resolution_); //LM 여러개의 submap들을 겹쳐 하나의 map으로 만들어 주는 함수
   std::unique_ptr<nav_msgs::msg::OccupancyGrid> msg_ptr = CreateOccupancyGridMsg(
       painted_slices, resolution_, last_frame_id_, last_timestamp_); //LM 2D map 이미지를 ROS2 occupancyGrid 메세지로 변환
   occupancy_grid_publisher_->publish(*msg_ptr); //LM 변환한 메세지 일정 주기마다 pub
-}//LM 일정 주기마다 map 메세지로 데이터 전송
+}//LM 여러 서브맵들을 하나의 큰 맵으로 합쳐서 ROS 표준 메시지 형태로 만들어주는 것.
 
 }  // namespace
 }  // namespace cartographer_ros

@@ -215,7 +215,7 @@ bool Node::handleTrajectoryQuery(
 
 void Node::PublishSubmapList() {
   absl::MutexLock lock(&mutex_);
-  submap_list_publisher_->publish(map_builder_bridge_->GetSubmapList(node_->now()));
+  submap_list_publisher_->publish(map_builder_bridge_->GetSubmapList(node_->now())); //LM 현재 시각 기준으로 최신 서브맵 상태를 반환
 }
 
 void Node::AddExtrapolator(const int trajectory_id,
