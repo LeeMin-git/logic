@@ -401,11 +401,11 @@ std::unique_ptr<nav_msgs::msg::OccupancyGrid> CreateOccupancyGridMsg(
   occupancy_grid->info.origin.orientation.z = 0.;
 
   const uint32_t* pixel_data = reinterpret_cast<uint32_t*>(
-      cairo_image_surface_get_data(painted_slices.surface.get()));
-  occupancy_grid->data.reserve(width * height);
+      cairo_image_surface_get_data(painted_slices.surface.get())); //LM(생각) 데이터가 RGBA 값을 뱉을 것임. painted_slices는 이미지 통합 결과임. data = [A,R,G,B]
+  occupancy_grid->data.reserve(width * height); //LM 포인터 크기 재할당.
   for (int y = height - 1; y >= 0; --y) {
     for (int x = 0; x < width; ++x) {
-      const uint32_t packed = pixel_data[y * width + x];
+      const uint32_t packed = pixel_data[y * width + x]; //LM 2차원 행렬을 1차원으로 변형하기 위한 식 = y*width+x
       const unsigned char color = packed >> 16;
       const unsigned char observed = packed >> 8;
       const int value =

@@ -145,7 +145,7 @@ Node::Node(const double resolution, const double publish_period_sec)
 
       auto fetched_textures = cartographer_ros::FetchSubmapTextures(
             id, client_, callback_group_executor_,
-            std::chrono::milliseconds(int(publish_period_sec * 1000))); //LM client_를 통해 submap의 이미지 형태의 맵 데이터(texture)를 요청
+            std::chrono::milliseconds(int(publish_period_sec * 1000))); //LM client_를 통해 submap의 이미지 형태의 맵 데이터(texture)를 요청하고 받은 reponse 값을 통해 실제 픽셀읠 intencity와 넓이 높이 해상도 데이터를 가져옴
       if (fetched_textures == nullptr) {
         continue;
       }
@@ -160,17 +160,17 @@ Node::Node(const double resolution, const double publish_period_sec)
       submap_slice.height = fetched_texture->height;
       submap_slice.slice_pose = fetched_texture->slice_pose;
       submap_slice.resolution = fetched_texture->resolution;
-      submap_slice.cairo_data.clear();
+      submap_slice.cairo_data.clear(); //LM 이전에 저장된 이미지 데이터 초기화
       submap_slice.surface = ::cartographer::io::DrawTexture(
           fetched_texture->pixels.intensity, fetched_texture->pixels.alpha,
           fetched_texture->width, fetched_texture->height,
-          &submap_slice.cairo_data);
+          &submap_slice.cairo_data); //LM 해당 부분이 2D 이미지를 생성하는 부분임. -> submap_slice.surface를 주석 처리 하니 맵을 못그림.
     }
 
     // Delete all submaps that didn't appear in the message.
     for (const auto& id : submap_ids_to_delete) {
       submap_slices_.erase(id);
-    }
+    }//LM(생각) submap_ids_to_delete에 현재는 안쓰는 애들이 저장되어 있음.
 
     last_timestamp_ = msg->header.stamp;
     last_frame_id_ = msg->header.frame_id;

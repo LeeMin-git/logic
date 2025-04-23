@@ -289,7 +289,7 @@ void ConstraintBuilder2D::RunWhenDoneCallback() {
     if (options_.log_matches()) {
       LOG(INFO) << constraints_.size() << " computations resulted in "
                 << result.size() << " additional constraints.";
-      g << "Score histogram:\n" << score_histogram_.ToString(10);
+      LOG(INFO) << "Score histogram:\n" << score_histogram_.ToString(10);
     }
     constraints_.clear();
     callback = std::move(when_done_);

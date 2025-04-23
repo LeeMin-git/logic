@@ -31,7 +31,7 @@ std::unique_ptr<::cartographer::io::SubmapTextures> FetchSubmapTextures(
     rclcpp::executors::SingleThreadedExecutor::SharedPtr callback_group_executor,
     const std::chrono::milliseconds timeout)
 {
-  auto request = std::make_shared<cartographer_ros_msgs::srv::SubmapQuery::Request>();
+  auto request = std::make_shared<cartographer_ros_msgs::srv::SubmapQuery::Request>(); //LM 해당 service의 request에는 trajectory_id 와 submap_id를 갖는다.
   request->trajectory_id = submap_id.trajectory_id;
   request->submap_index = submap_id.submap_index;
   auto future_result = client->async_send_request(request);
@@ -41,8 +41,7 @@ std::unique_ptr<::cartographer::io::SubmapTextures> FetchSubmapTextures(
   {
     return nullptr;
   }
-  auto result = future_result.get();
-
+  auto result = future_result.get(); //LM service server로 부터 값을 받아옴.
   if (result->status.code != ::cartographer_ros_msgs::msg::StatusCode::OK ||
       result->textures.empty()) {
     return nullptr;
