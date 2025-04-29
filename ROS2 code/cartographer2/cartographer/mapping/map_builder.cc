@@ -95,7 +95,7 @@ MapBuilder::MapBuilder(const proto::MapBuilderOptions& options)
   if (options.collate_by_trajectory()) {
     sensor_collator_ = absl::make_unique<sensor::TrajectoryCollator>();
   } else {
-    sensor_collator_ = absl::make_unique<sensor::Collator>();
+    sensor_collator_ = absl::make_unique<sensor::Collator>(); //LM map_builder.lua에 false 선언되어 있음.
   }
 }
 
@@ -132,8 +132,9 @@ int MapBuilder::AddTrajectoryBuilder(
     if (trajectory_options.has_trajectory_builder_2d_options()) {
       local_trajectory_builder = absl::make_unique<LocalTrajectoryBuilder2D>(
           trajectory_options.trajectory_builder_2d_options(),
-          SelectRangeSensorIds(expected_sensor_ids));
-    }
+          SelectRangeSensorIds(expected_sensor_ids)); 
+    }//LM 해당 토픽이 lidar 관련 토픽이라면 토픽명과 trajectory_builder 옵션을 포인터에 저장.
+    //    local_trajectory_builder 에는 다양한 option과 scan이 저장될 것임.
     DCHECK(dynamic_cast<PoseGraph2D*>(pose_graph_.get()));
     trajectory_builders_.push_back(absl::make_unique<CollatedTrajectoryBuilder>(
         trajectory_options, sensor_collator_.get(), trajectory_id,
@@ -142,6 +143,8 @@ int MapBuilder::AddTrajectoryBuilder(
             std::move(local_trajectory_builder), trajectory_id,
             static_cast<PoseGraph2D*>(pose_graph_.get()),
             local_slam_result_callback, pose_graph_odometry_motion_filter)));
+            //LM trajectory_builders_에 센서 테이터를 시간 순서로 정렬하는 역할을 수행/
+            //   이후 GlobalTrajectoryBuilder2D로 데이터를 넘긴다.
   }
   MaybeAddPureLocalizationTrimmer(trajectory_id, trajectory_options,
                                   pose_graph_.get());

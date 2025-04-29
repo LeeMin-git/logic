@@ -141,19 +141,19 @@ LaserScanToPointCloudWithIntensities(const LaserMessageType& msg) {
   } else {
     CHECK_GT(msg.angle_min, msg.angle_max);
   }
-  //LM 여러 설정을 비교하는 것으로 보임.
+  //LM /scan의 실제 값을 비교하는 것으로 보임.
   PointCloudWithIntensities point_cloud;
-  float angle = msg.angle_min;
+  float angle = msg.angle_min; //LM 계속 0을 주고 있음.
   for (size_t i = 0; i < msg.ranges.size(); ++i) {
     const auto& echoes = msg.ranges[i];
-    if (HasEcho(echoes)) {
-      const float first_echo = GetFirstEcho(echoes);
+    if (HasEcho(echoes)) { //LM 유효한 거리값이 존재하는지 확인.
+      const float first_echo = GetFirstEcho(echoes); 
       if (msg.range_min <= first_echo && first_echo <= msg.range_max) {
         const Eigen::AngleAxisf rotation(angle, Eigen::Vector3f::UnitZ());
         const cartographer::sensor::TimedRangefinderPoint point{
             rotation * (first_echo * Eigen::Vector3f::UnitX()),
-            i * msg.time_increment};
-        point_cloud.points.push_back(point);
+            i * msg.time_increment};//LM gazebo 환경에서는 msg.time_increment도 0의 값을 계속 뱉음.
+        point_cloud.points.push_back(point); 
         if (msg.intensities.size() > 0) {
           CHECK_EQ(msg.intensities.size(), msg.ranges.size());
           const auto& echo_intensities = msg.intensities[i];
@@ -164,7 +164,7 @@ LaserScanToPointCloudWithIntensities(const LaserMessageType& msg) {
         }
       }
     }
-    angle += msg.angle_increment;
+    angle += msg.angle_increment; //LM angle 값이 계속 변함.
   }
   ::cartographer::common::Time timestamp = FromRos(msg.header.stamp);
   if (!point_cloud.points.empty()) {

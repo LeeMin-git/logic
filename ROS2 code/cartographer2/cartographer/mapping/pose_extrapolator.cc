@@ -105,13 +105,15 @@ void PoseExtrapolator::AddOdometryData(
     return;
   }
   // TODO(whess): Improve by using more than just the last two odometry poses.
-  // Compute extrapolation in the tracking frame.
+  // Compute extrapolation ein the tracking frame.
   const sensor::OdometryData& odometry_data_oldest = odometry_data_.front();
   const sensor::OdometryData& odometry_data_newest = odometry_data_.back();
   const double odometry_time_delta =
       common::ToSeconds(odometry_data_oldest.time - odometry_data_newest.time);
+      //LM 첫 데이터와 마지막 데이터의 시간만 비교하면 되기때문에 위와 같이 뺌
   const transform::Rigid3d odometry_pose_delta =
       odometry_data_newest.pose.inverse() * odometry_data_oldest.pose;
+      //LM 위 식을 통해 과거의 좌표가 현재의 좌표계에서 나타내는 값을 구할 수 있음.
   angular_velocity_from_odometry_ =
       transform::RotationQuaternionToAngleAxisVector(
           odometry_pose_delta.rotation()) /
@@ -121,15 +123,15 @@ void PoseExtrapolator::AddOdometryData(
   }
   const Eigen::Vector3d
       linear_velocity_in_tracking_frame_at_newest_odometry_time =
-          odometry_pose_delta.translation() / odometry_time_delta;
+          odometry_pose_delta.translation() / odometry_time_delta; //LM 선속도 구함.
   const Eigen::Quaterniond orientation_at_newest_odometry_time =
       timed_pose_queue_.back().pose.rotation() *
       ExtrapolateRotation(odometry_data_newest.time,
-                          odometry_imu_tracker_.get());
+                          odometry_imu_tracker_.get()); //LM 이게 뭔지 알아야함.
   linear_velocity_from_odometry_ =
       orientation_at_newest_odometry_time *
       linear_velocity_in_tracking_frame_at_newest_odometry_time;
-} //LM 해당 부분의 수식이 이해가 안됨.
+} //LM 회전에 대해서는 imu 센서가 더 정확하기 때문에 보정 작업을 진행함. / 이해x
 
 transform::Rigid3d PoseExtrapolator::ExtrapolatePose(const common::Time time) {
   const TimedPose& newest_timed_pose = timed_pose_queue_.back();
@@ -200,10 +202,10 @@ void PoseExtrapolator::AdvanceImuTracker(const common::Time time,
     // There is no IMU data until 'time', so we advance the ImuTracker and use
     // the angular velocities from poses and fake gravity to help 2D stability.
     imu_tracker->Advance(time);
-    imu_tracker->AddImuLinearAccelerationObservation(Eigen::Vector3d::UnitZ());
+    imu_tracker->AddImuLinearAccelerationObservation(Eigen::Vector3d::UnitZ());//LM 가짜 gravity를 넣음.
     imu_tracker->AddImuAngularVelocityObservation(
         odometry_data_.size() < 2 ? angular_velocity_from_poses_
-                                  : angular_velocity_from_odometry_);
+                                  : angular_velocity_from_odometry_); //LM odom 또는 pose에서 추정한 회전 속도를 넣음.
     return;
   }
   if (imu_tracker->time() < imu_data_.front().time) {
@@ -222,15 +224,15 @@ void PoseExtrapolator::AdvanceImuTracker(const common::Time time,
     ++it;
   }
   imu_tracker->Advance(time);
-}//LM 
+}//LM time까지 imu_tracker를 imu 데이터 기반으로 정확히 진행 / 이해x
 
 Eigen::Quaterniond PoseExtrapolator::ExtrapolateRotation(
     const common::Time time, ImuTracker* const imu_tracker) const {
   CHECK_GE(time, imu_tracker->time());
   AdvanceImuTracker(time, imu_tracker);
-  const Eigen::Quaterniond last_orientation = imu_tracker_->orientation();
+  const Eigen::Quaterniond last_orientation = imu_tracker_->orientation(); //LM 현재까지 robot의 회전값만 저장.
   return last_orientation.inverse() * imu_tracker->orientation();
-}
+} //LM 현재 상태에서 얼마나 회전했는지 확인하기 위해 inverse 사용, 자세한 이유는 잘 모르겠음.
 
 Eigen::Vector3d PoseExtrapolator::ExtrapolateTranslation(common::Time time) {
   const TimedPose& newest_timed_pose = timed_pose_queue_.back();

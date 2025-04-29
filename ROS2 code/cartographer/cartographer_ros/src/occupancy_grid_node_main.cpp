@@ -109,7 +109,7 @@ Node::Node(const double resolution, const double publish_period_sec)
     std::chrono::milliseconds(int(publish_period_sec * 1000)),
     [this]() {
       DrawAndPublish();
-    }); //LM timer 함수를 통해 주어진 주기 마다 람다 함수 실행 (이때 람다 함수는 DrawAndPublish 임.)
+    }); //LM timer 함수를 통해 주어진 주기 마다 DrawAndPublish 실행
 
   auto handleSubmapList =
     [this, publish_period_sec](const typename cartographer_ros_msgs::msg::SubmapList::SharedPtr msg) -> void 
@@ -188,7 +188,7 @@ void Node::DrawAndPublish() {
   auto painted_slices = PaintSubmapSlices(submap_slices_, resolution_); //LM 여러개의 submap들을 겹쳐 하나의 map으로 만들어 주는 함수
   std::unique_ptr<nav_msgs::msg::OccupancyGrid> msg_ptr = CreateOccupancyGridMsg(
       painted_slices, resolution_, last_frame_id_, last_timestamp_); //LM 2D map 이미지를 ROS2 occupancyGrid 메세지로 변환
-  occupancy_grid_publisher_->publish(*msg_ptr); //LM 변환한 메세지 일정 주기마다 pub
+  occupancy_grid_publisher_->publish(*msg_ptr); //LM 변환한 메세지 일정 주기마다 pub, 이것도 주석처리 하면 map을 못그림.
 }//LM 여러 서브맵들을 하나의 큰 맵으로 합쳐서 ROS 표준 메시지 형태로 만들어주는 것.
 
 }  // namespace

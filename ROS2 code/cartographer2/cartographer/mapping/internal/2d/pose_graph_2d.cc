@@ -321,22 +321,23 @@ WorkItem::Result PoseGraph2D::ComputeConstraintsForNode(
     const auto& constant_data =
         data_.trajectory_nodes.at(node_id).constant_data;
     submap_ids = InitializeGlobalSubmapPoses(
-        node_id.trajectory_id, constant_data->time, insertion_submaps);
+        node_id.trajectory_id, constant_data->time, insertion_submaps);//LM 새로 추가된 Node(node id)의 고정 데이터를 가져옴./ Node가 속한 submap들의 ID를 초기화
+                                                                       //-> 해당 노드가 어떤 submap들과 연결돼야 하는지 준비하는 단계
     CHECK_EQ(submap_ids.size(), insertion_submaps.size());
     const SubmapId matching_id = submap_ids.front();
     const transform::Rigid2d local_pose_2d =
         transform::Project2D(constant_data->local_pose *
                              transform::Rigid3d::Rotation(
-                                 constant_data->gravity_alignment.inverse()));
+                                 constant_data->gravity_alignment.inverse())); //LM 로봇의 중력 방향의 보정을 반영한 2D Local Pose를 계산.
     const transform::Rigid2d global_pose_2d =
         optimization_problem_->submap_data().at(matching_id).global_pose *
         constraints::ComputeSubmapPose(*insertion_submaps.front()).inverse() *
-        local_pose_2d;
+        local_pose_2d; //LM Local Pose를 submap 글로벌 좌표계로 변환하여 Global Pose를 계산. -> local의 node 위치를 global 위치로 변경하는 과정
     optimization_problem_->AddTrajectoryNode(
         matching_id.trajectory_id,
         optimization::NodeSpec2D{constant_data->time, local_pose_2d,
                                  global_pose_2d,
-                                 constant_data->gravity_alignment});
+                                 constant_data->gravity_alignment}); //LM 새 Node를 OptimizationProblem에 등록, PoseGraph 최적화에 사용
     for (size_t i = 0; i < insertion_submaps.size(); ++i) {
       const SubmapId submap_id = submap_ids[i];
       // Even if this was the last node added to 'submap_id', the submap will
@@ -354,7 +355,7 @@ WorkItem::Result PoseGraph2D::ComputeConstraintsForNode(
                       options_.matcher_translation_weight(),
                       options_.matcher_rotation_weight()},
                      Constraint::INTRA_SUBMAP});
-    }
+    } //LM 로컬 레벨 연결성 보장을 위해 Node(새로 추가한 것)와 연결된 모든 submap에 대해 상호간의 local constraint(로컬 제약조건)을 추가함.
 
     // TODO(gaschler): Consider not searching for constraints against
     // trajectories scheduled for deletion.
@@ -365,7 +366,7 @@ WorkItem::Result PoseGraph2D::ComputeConstraintsForNode(
         CHECK_EQ(submap_id_data.data.node_ids.count(node_id), 0);
         finished_submap_ids.emplace_back(submap_id_data.id);
       }
-    }
+    }//LM 완성된 submap 목록을 모아 루프 글로징 후보 submap을 찾음. / 완성된 submap: 더이상 데이터를 받지 않는 submap
     if (newly_finished_submap) {
       const SubmapId newly_finished_submap_id = submap_ids.front();
       InternalSubmapData& finished_submap_data =
@@ -374,11 +375,11 @@ WorkItem::Result PoseGraph2D::ComputeConstraintsForNode(
       finished_submap_data.state = SubmapState::kFinished;
       newly_finished_submap_node_ids = finished_submap_data.node_ids;
     }
-  }
+  }//LM 
 
   for (const auto& submap_id : finished_submap_ids) {
     ComputeConstraint(node_id, submap_id);
-  }
+  }//LM 완성된 submap(더 이상 update되지 않는 submap)과 새 Node를 비교 / loop closing 검사 및 후보 생성.
 
   if (newly_finished_submap) {
     const SubmapId newly_finished_submap_id = submap_ids.front();
@@ -389,7 +390,7 @@ WorkItem::Result PoseGraph2D::ComputeConstraintsForNode(
       if (newly_finished_submap_node_ids.count(node_id) == 0) {
         ComputeConstraint(node_id, newly_finished_submap_id);
       }
-    }
+    }//LM
   }
   constraint_builder_.NotifyEndOfNode();
   absl::MutexLock locker(&mutex_);
@@ -397,7 +398,7 @@ WorkItem::Result PoseGraph2D::ComputeConstraintsForNode(
   if (options_.optimize_every_n_nodes() > 0 &&
       num_nodes_since_last_loop_closure_ > options_.optimize_every_n_nodes()) {
     return WorkItem::Result::kRunOptimization;
-  }
+  }//LM 추가된 Node 수가 설정 값(optimize_every_n_nodes)을 초과하면 최적화를 실행하라는 신호를 줌.
   return WorkItem::Result::kDoNotRunOptimization;
 }
 
@@ -861,18 +862,19 @@ void PoseGraph2D::RunFinalOptimization() {
 void PoseGraph2D::RunOptimization() {
   if (optimization_problem_->submap_data().empty()) {
     return;
-  }
+  } //LM 최적화할 데이터가 존재하지 않기 때문에 무시
 
   // No other thread is accessing the optimization_problem_,
   // data_.constraints, data_.frozen_trajectories and data_.landmark_nodes
   // when executing the Solve. Solve is time consuming, so not taking the mutex
   // before Solve to avoid blocking foreground processing.
   optimization_problem_->Solve(data_.constraints, GetTrajectoryStates(),
-                               data_.landmark_nodes);
+                               data_.landmark_nodes); //LM 제약조건 리스트,현재 trajectory 상태 랜드마크 정보를 활용하여 OptimizationProblem에서 최적화 실행.
   absl::MutexLock locker(&mutex_);
 
   const auto& submap_data = optimization_problem_->submap_data();
   const auto& node_data = optimization_problem_->node_data();
+  //LM 최적화가 끝난 후 새로 계산된 Submap 위치들과 Node pose들을 가져옴.
   for (const int trajectory_id : node_data.trajectory_ids()) {
     for (const auto& node : node_data.trajectory(trajectory_id)) {
       auto& mutable_trajectory_node = data_.trajectory_nodes.at(node.id);
@@ -880,7 +882,7 @@ void PoseGraph2D::RunOptimization() {
           transform::Embed3D(node.data.global_pose_2d) *
           transform::Rigid3d::Rotation(
               mutable_trajectory_node.constant_data->gravity_alignment);
-    }
+    } //LM Node들의 전역 위치가 죄적화된 일관성 있는 위치로 수정하기 위해 최적화된 2D Global Pose를 3D로 변환, 각 Node의 Global Pose를 갱신
 
     // Extrapolate all point cloud poses that were not included in the
     // 'optimization_problem_' yet.
@@ -890,7 +892,7 @@ void PoseGraph2D::RunOptimization() {
         data_.global_submap_poses_2d, trajectory_id);
     const transform::Rigid3d old_global_to_new_global =
         local_to_new_global * local_to_old_global.inverse();
-
+    //LM 모든 Node들이 일관성 있게 정렬되도록 최적화 대상에 포함되지 않은 최근 Node들도 Global 좌표계를 재정렬해서 보정함.
     const NodeId last_optimized_node_id =
         std::prev(node_data.EndOfTrajectory(trajectory_id))->id;
     auto node_it =
@@ -901,11 +903,11 @@ void PoseGraph2D::RunOptimization() {
       mutable_trajectory_node.global_pose =
           old_global_to_new_global * mutable_trajectory_node.global_pose;
     }
-  }
+  } 
   for (const auto& landmark : optimization_problem_->landmark_data()) {
     data_.landmark_nodes[landmark.first].global_landmark_pose = landmark.second;
-  }
-  data_.global_submap_poses_2d = submap_data;
+  } //LM 최적화된 랜드마크 위치도 업데이트.
+  data_.global_submap_poses_2d = submap_data;//LM submap 위치 최신화를 위해 최적화 된 submap들의 global pose를 전체 posegraph에 저장.
 }
 
 bool PoseGraph2D::CanAddWorkItemModifying(int trajectory_id) {

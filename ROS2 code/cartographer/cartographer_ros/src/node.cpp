@@ -98,7 +98,7 @@ Node::Node(
   node_ = node;
   tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(node_) ;
   map_builder_bridge_.reset(new cartographer_ros::MapBuilderBridge(node_options_, std::move(map_builder), tf_buffer.get()));
-
+//LM reset을 통해 map_builder_bridge_는 map_builder로 받은 인자가 됨. -> map_builder.cc
   absl::MutexLock lock(&mutex_);
   if (collect_metrics) {
     metrics_registry_ = absl::make_unique<metrics::FamilyFactory>();
@@ -177,7 +177,7 @@ Node::Node(
   landmark_pose_list_timer_ = node_->create_wall_timer(
     std::chrono::milliseconds(int(node_options_.trajectory_publish_period_sec * 1000)),
     [this]() {
-      PublishLandmarkPosesList();
+      PublishLandmarkPosesList(); //LM 값이 날아오긴 하나 []와 같이 빈 값을 보냄.
     });
   constrain_list_timer_ = node_->create_wall_timer(
     std::chrono::milliseconds(int(kConstraintPublishPeriodSec * 1000)),
